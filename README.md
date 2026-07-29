@@ -25,7 +25,7 @@ Covers the full AS syllabus: Topics 1–5.
 - **`AS_Business_9609_Topic_MiniTests_Answers.pdf`** — Answer keys.
 
 ### Exam technique
-- **`AS_Business_9609_Exam_Technique.pdf`** — How to lay out 3, 5, 8 and 12 mark answers to get all the marks (K/App/An/Ev), with worked model answers for each tariff.
+- **`AS_Business_9609_Exam_Technique.pdf`** — How to lay out 2, 3, 5, 8 and 12 mark answers to get all the marks (K/App/An/Ev), with worked model answers for each tariff.
 
 ## Suggested revision routine
 1. Read the relevant section of **Notes**.

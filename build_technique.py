@@ -17,6 +17,7 @@ sp()
 
 h1('1. Match your effort to the marks')
 p('The mark tariff tells you how much to write and which skills are tested:')
+bu('2 marks - "Define / State" - tests Knowledge only. A precise definition (2 elements) OR two stated items. One or two sentences. About 3 minutes.')
 bu('3 marks - "Define / State / Identify" - tests Knowledge (+ a little Application). Write a precise definition plus a brief example. About 4 minutes.')
 bu('5 marks - "Explain" - tests Knowledge + Application + a little Analysis. Point, define, apply, then develop ONE step. About 6 minutes.')
 bu('8 marks - "Analyse" - tests Knowledge + Application + Analysis. Two developed chains. No judgement. About 10 minutes.')
@@ -28,8 +29,20 @@ bu('[App] Application (AO2): use the specific business/context given in the ques
 bu('[An] Analysis (AO3): develop cause-and-effect chains - push each point to its final effect on the business.')
 bu('[Ev] Evaluation (AO4): make and justify a judgement. Needed ONLY on 12 (and higher) mark questions.')
 
+# ---------------- 2 MARK ----------------
+h1('3. The 2-mark layout - "Define / State"')
+p('Recipe: a precise definition made of TWO parts [K], OR two clearly stated items.')
+p('Template (define): [Term] is [part 1 of definition] [K] which [part 2 of definition] [K].')
+p('Template (state two): Two [items] are [item 1] [K] and [item 2] [K].')
+bu('Usually 1 mark per correct element. Keep it to one or two sentences.')
+bu('Do: use the exact key words. Do NOT: give examples, explanations or chains - there are no marks for them here.')
+h3('Worked example - "Define opportunity cost" [2]')
+p('Opportunity cost is the benefit of the next best alternative [K] that is given up when a choice is made [K].')
+h3('Worked example - "State two factors of production" [2]')
+p('Two factors of production are land [K] and labour [K].')
+
 # ---------------- 3 MARK ----------------
-h1('3. The 3-mark layout - "Define / State"')
+h1('4. The 3-mark layout - "Define / State"')
 p('Recipe: Definition [K] + a short example or extra detail [K/App].')
 p('Template: [Term] is [clear precise definition]. For example, [quick example].')
 bu('2 marks for the definition, 1 for the example/expansion.')
@@ -38,7 +51,7 @@ h3('Worked example - "Define added value" [3]')
 p('Added value is the difference between the selling price of a product and the cost of the bought-in materials used to make it [K]. For example, a coffee shop buying beans for $0.30 and selling a coffee for $3.00 adds $2.70 of value [App].')
 
 # ---------------- 5 MARK ----------------
-h1('4. The 5-mark layout - "Explain"')
+h1('5. The 5-mark layout - "Explain"')
 p('Recipe: Point, then define [K], then apply to the business [App], then develop ONE step [An].')
 p('Template: One [benefit/reason] is [point], which means [define] [K]. In the case of [business/context] this [apply] [App], so [one consequence] [An].')
 bu('If the question says "Explain two...", write two shorter versions (about 2-3 marks each).')
@@ -47,7 +60,7 @@ h3('Worked example - "Explain one benefit to a firm of low labour turnover" [5]'
 p('One benefit is a more experienced workforce [K], as fewer staff leave so skills are retained [K]. For a manufacturer relying on skilled machine operators [App], this means higher quality and productivity [An] and lower recruitment and training costs [An].')
 
 # ---------------- 8 MARK ----------------
-h1('5. The 8-mark layout - "Analyse"')
+h1('6. The 8-mark layout - "Analyse"')
 p('Recipe: TWO points. Each = Point, define [K], apply [App], then chain 2-3 steps: because... which leads to... therefore... [An].')
 p('Paragraph template (write it twice): One [way/benefit/drawback] is [point] [K]. This means [define] [K]. For [business/context] this [apply] [App]. As a result [effect 1] [An], which in turn [effect 2] [An], meaning [final effect on profit/costs/competitiveness] [An].')
 bu('The key skill is CHAINS - push each point to its final business effect; do not stop at the first consequence.')
@@ -59,7 +72,7 @@ p('Point 2 - Higher output and tax revenue: A second way is by increasing nation
 p('Note: there is NO judgement - an 8-mark analyse question does not need one.')
 
 # ---------------- 12 MARK ----------------
-h1('6. The 12-mark layout - "Evaluate / Recommend / Discuss"')
+h1('7. The 12-mark layout - "Evaluate / Recommend / Discuss"')
 p('Structure: (optional 1-line intro), Argument 1 as a full chain, Argument 2 or counter as a full chain, then the JUDGEMENT.')
 bu('Argument FOR / benefit - same chain as an 8-marker (K + App + An).')
 bu('Argument AGAINST / drawback / alternative - another full applied chain.')
@@ -77,13 +90,14 @@ p('AGAINST: However, intrapreneurship alone cannot guarantee success. Finance an
 p('JUDGEMENT: Overall, intrapreneurship is a major factor but not necessarily THE most important [Ev]. It is necessary but not sufficient - the innovation it produces only creates success if supported by finance to develop the games and marketing to sell them [Ev]. Its importance also depends on the situation [Ev]: for a new start-up studio, securing finance is probably most critical in the short term, whereas for an established studio intrapreneurship is the key to staying competitive in the long term [Ev]. Therefore the statement is only partly true: intrapreneurship drives the long-term innovation this industry relies on, but the single most important factor changes with the business size, stage and objectives, so it must be combined with sound finance and marketing rather than relied on alone [Ev].')
 
 # ---------------- SUMMARY ----------------
-h1('7. One-look revision card')
+h1('8. One-look revision card')
+p('2 marks: definition (2 parts) or two stated items. K yes, App no, An no, Ev no. No example needed.')
 p('3 marks: 1 definition. K yes, App small, An no, Ev no. No intro/conclusion.')
 p('5 marks: 1-2 points. K yes, App yes, An one step, Ev no. No intro/conclusion.')
 p('8 marks: 2 points. K yes, App yes, An 2-3 steps, Ev no. No intro/conclusion.')
 p('12 marks: 2 points + judgement. K yes, App yes, An 2-3 steps, Ev ESSENTIAL. Judgement only, no long intro.')
 
-h1('8. The three biggest mark-losers to avoid')
+h1('9. The three biggest mark-losers to avoid')
 bu('Not linking to the business given in the question - you lose all Application marks.')
 bu('Listing many points without developing them - you lose Analysis marks. Fewer, deeper chains score higher.')
 bu('Writing no judgement on a 12-mark question - you cap your mark at roughly half.')
