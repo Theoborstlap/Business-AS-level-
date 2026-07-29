@@ -5,10 +5,26 @@
    Grading is keyword-based, so it is a guide - phrase answers in your own
    words and check against the model answer shown. */
 
+// Light stemmer so plurals / verb forms match (attracts -> attract,
+// building -> build, customers -> customer). Applied to BOTH the typed
+// answer and the keyword synonyms so matching is consistent.
+function stemWord(w) {
+  if (w.length > 4 && w.slice(-3) === "ing") return w.slice(0, -3);
+  if (w.length > 4 && w.slice(-2) === "ed") return w.slice(0, -2);
+  if (w.length > 4 && w.slice(-3) === "ies") return w.slice(0, -3) + "y";
+  if (w.length > 3 && w.slice(-2) === "es") return w.slice(0, -2);
+  if (w.length > 3 && w.slice(-1) === "s" && w.slice(-2) !== "ss") return w.slice(0, -1);
+  return w;
+}
+
 function normalizeText(s) {
-  return (" " + String(s).toLowerCase() + " ")
+  var cleaned = (" " + String(s).toLowerCase() + " ")
     .replace(/[^a-z0-9%.$ ]/g, " ")
-    .replace(/\s+/g, " ");
+    .replace(/\s+/g, " ")
+    .trim();
+  if (cleaned === "") return " ";
+  var words = cleaned.split(" ").map(stemWord);
+  return " " + words.join(" ") + " ";
 }
 
 function pointHit(answerNorm, synonyms) {
@@ -19,12 +35,24 @@ function pointHit(answerNorm, synonyms) {
   return false;
 }
 
+// Returns the list of mark-point synonym groups for an item.
+// 2-mark items use p1/p2; 3-mark items use a "points" array of groups.
+function getPointGroups(item) {
+  if (item.points) return item.points;
+  return [item.p1, item.p2];
+}
+
 function gradeAnswer(answer, item) {
   var a = normalizeText(answer);
-  var p1 = pointHit(a, item.p1);
-  var p2 = pointHit(a, item.p2);
-  var marks = (p1 ? 1 : 0) + (p2 ? 1 : 0);
-  return { marks: marks, p1: p1, p2: p2 };
+  var groups = getPointGroups(item);
+  var hits = [];
+  var marks = 0;
+  for (var i = 0; i < groups.length; i++) {
+    var hit = pointHit(a, groups[i]);
+    hits.push(hit);
+    if (hit) marks++;
+  }
+  return { marks: marks, hits: hits, max: groups.length };
 }
 
 var QUIZ_DATA = [
@@ -166,6 +194,200 @@ var QUIZ_DATA = [
   {q:"Liquidation", t:5, p1:["company is closed","wound up","closed down","ceases"], p2:["assets sold","sell assets","pay creditors","repay debts"], m:"When a company is closed down and its assets are sold to repay creditors."}
 ];
 
+/* ===================================================================
+   3-MARK "EXPLAIN" QUESTIONS
+   Each has three mark points (points[0..2]): typically the point itself
+   plus two development/consequence steps. A point is awarded if the answer
+   (in the student's own words) contains any keyword/synonym for it.
+   3 = correct, 1-2 = partially correct, 0 = wrong.
+   =================================================================== */
+var QUIZ_DATA_3 = [
+  // ---- Topic 1 ----
+  {q:"Explain one advantage to a business of buying a franchise.", t:1, points:[
+    ["proven","already established","recognised brand","recognized brand","established brand","well-known","well known","low risk","less risk","lower risk"],
+    ["customers","demand","attract","from the start","existing customer base"],
+    ["support","training","help","advice","more likely to succeed","less likely to fail"]],
+    m:"The business idea and brand are already proven/recognised (1), so customers are more likely to buy from the start (2), and the franchisor gives support/training, making success more likely (3)."},
+  {q:"Explain one reason why some organisations operate in the public sector.", t:1, points:[
+    ["essential","important service","needed by everyone","healthcare","education","basic service"],
+    ["not profit","affordable","everyone can access","fair","provided to all","free"],
+    ["private firms would not","too expensive if private","market would fail","government ensures","otherwise not provided"]],
+    m:"Some services (e.g. healthcare) are essential (1); if left to private firms they may be unaffordable or not provided (2), so the government provides them so everyone can access them (3)."},
+  {q:"Explain one weakness of family businesses.", t:1, points:[
+    ["family conflict","disagreements","arguments","disputes","fall out"],
+    ["personal and work","relationships","succession","emotions","mixing"],
+    ["slows decisions","harms performance","damages the business","affects productivity","poor decisions"]],
+    m:"Family conflict is more likely (1) because personal and work relationships are mixed (2), which can slow decisions and harm the performance of the business (3)."},
+  {q:"Explain one benefit to a business of having limited liability.", t:1, points:[
+    ["personal assets protected","only lose","amount invested","not personally liable"],
+    ["encourages investment","willing to invest","less risk to owners","attract investors"],
+    ["raise finance","raise capital","expand","grow"]],
+    m:"Owners' personal assets are protected (1), which encourages people to invest as their risk is limited (2), making it easier to raise finance to grow (3)."},
+  {q:"Explain one advantage of operating as a sole trader.", t:1, points:[
+    ["full control","own decisions","independence","own boss"],
+    ["keeps all profit","all the profit","retain profit"],
+    ["quick decisions","flexible","motivated","respond quickly"]],
+    m:"The owner has full control and makes all decisions (1), keeps all the profit (2) and can make quick, flexible decisions (3)."},
+  {q:"Explain one reason why a business might set social objectives.", t:1, points:[
+    ["reputation","image","brand image"],
+    ["attract customers","loyalty","sales","more customers"],
+    ["benefit society","environment","community","help people"]],
+    m:"Social objectives can improve the firm's reputation/image (1), attracting more loyal customers and sales (2), while also benefiting society/the environment (3)."},
+  {q:"Explain one benefit to a business of producing a business plan.", t:1, points:[
+    ["raise finance","attract investors","bank loan","obtain a loan","secure funding"],
+    ["objectives","research","strategy","forecasts","shows the idea"],
+    ["reduce risk","identify problems","aids decisions","spot problems","plan ahead"]],
+    m:"A business plan helps raise finance (1) by showing objectives, research and forecasts (2), and reduces risk by identifying problems in advance (3)."},
+
+  // ---- Topic 2 ----
+  {q:"Explain one advantage of internal recruitment.", t:2, points:[
+    ["cheaper","faster","less time","quicker","saves money"],
+    ["already known","familiar with the business","proven","know their ability"],
+    ["motivat","promotion","morale","reward staff"]],
+    m:"Internal recruitment is cheaper and quicker (1), the candidate is already known to the business (2), and it motivates staff through the chance of promotion (3)."},
+  {q:"Explain one benefit to a business of training its employees.", t:2, points:[
+    ["skills","more skilled","skilled workforce","ability"],
+    ["productivity","quality","fewer mistakes","efficiency","output"],
+    ["motivat","retention","stay","loyalty","satisfaction"]],
+    m:"Training improves employees' skills (1), raising productivity and quality (2), and can motivate staff so more of them stay (3)."},
+  {q:"Explain one reason why a business might have high labour turnover.", t:2, points:[
+    ["low pay","poor pay","better pay elsewhere","wages"],
+    ["poor motivation","dissatisfaction","poor conditions","poor management","unhappy"],
+    ["leave","quit","find other jobs","resign"]],
+    m:"Low pay (1) and poor motivation/conditions (2) make staff dissatisfied, so more of them leave for other jobs (3)."},
+  {q:"Explain one benefit to a business of motivating its employees.", t:2, points:[
+    ["productivity","work harder","output","effort"],
+    ["quality","fewer errors","better work"],
+    ["absenteeism","turnover","retention","attendance"]],
+    m:"Motivated staff are more productive (1), produce higher quality work (2) and have lower absenteeism and turnover (3)."},
+  {q:"Explain one advantage of using a democratic leadership style.", t:2, points:[
+    ["consulted","involved","ideas","input","participate"],
+    ["motivat","morale","valued","satisfaction"],
+    ["better decisions","commitment","ownership"]],
+    m:"Staff are consulted and can contribute ideas (1), which raises motivation as they feel valued (2), and can lead to better decisions and commitment (3)."},
+  {q:"Explain one disadvantage of using an autocratic leadership style.", t:2, points:[
+    ["no consultation","not involved","one-way","not consulted","ignored"],
+    ["demotivat","low morale","dissatisf","unhappy"],
+    ["turnover","lack of ideas","dependence on the leader","leave","no creativity"]],
+    m:"Staff are not consulted (1), which can demotivate them and lower morale (2), leading to higher turnover and a lack of new ideas (3)."},
+  {q:"Explain one benefit of empowerment to employees.", t:2, points:[
+    ["control","authority","own decisions","power"],
+    ["motivat","valued","satisfaction","trusted"],
+    ["productivity","creativity","commitment","initiative"]],
+    m:"Empowerment gives employees more control over their work (1), making them feel valued and motivated (2), which can raise productivity and creativity (3)."},
+  {q:"Explain one disadvantage to a business of a high rate of labour turnover.", t:2, points:[
+    ["recruitment","training costs","cost of replacing","hiring costs"],
+    ["lost experience","productivity falls","lost skills","less experienced"],
+    ["morale","disruption","unsettled","remaining staff"]],
+    m:"High turnover raises recruitment and training costs (1), loses experienced staff so productivity falls (2), and can disrupt and unsettle remaining workers (3)."},
+
+  // ---- Topic 3 ----
+  {q:"Explain one benefit to a business of market segmentation.", t:3, points:[
+    ["target","specific group","identify needs","focus on a group"],
+    ["meet needs","suitable product","satisfy","match needs"],
+    ["increase sales","revenue","less waste","more profit"]],
+    m:"Segmentation lets a firm target a specific group (1), design products that better meet their needs (2), and so increase sales while wasting less marketing (3)."},
+  {q:"Explain one advantage of niche marketing.", t:3, points:[
+    ["less competition","few rivals","little competition"],
+    ["higher price","higher margins","loyalty","premium"],
+    ["focus","specialise","specific needs","target resources"]],
+    m:"A niche often has less competition (1), so the firm can charge higher prices/margins (2) by focusing on the specific needs of that segment (3)."},
+  {q:"Explain one benefit to a business of carrying out market research.", t:3, points:[
+    ["customer needs","wants","understand the market","what customers want"],
+    ["better decisions","suitable product","pricing","informed decisions"],
+    ["reduce risk","avoid failure","fewer mistakes","less likely to fail"]],
+    m:"Market research reveals customer needs (1), leading to better product and pricing decisions (2), which reduces the risk of the product failing (3)."},
+  {q:"Explain one advantage of using penetration pricing.", t:3, points:[
+    ["low price","cheap price","low initial"],
+    ["attract customers","gain market share","enter the market","win customers"],
+    ["build sales","brand awareness","repeat purchase","encourage trial"]],
+    m:"A low price (1) attracts customers and helps gain market share when entering a market (2), building sales and repeat custom (3)."},
+  {q:"Explain one reason why branding is important to a business.", t:3, points:[
+    ["recognition","identify","stand out","recognisable"],
+    ["loyalty","repeat","trust","customers return"],
+    ["higher price","premium","competitive advantage","charge more"]],
+    m:"A brand helps customers recognise the product (1), builds loyalty and repeat purchases (2), and can allow the firm to charge a higher price (3)."},
+  {q:"Explain one benefit to a business of customer relationship marketing (CRM).", t:3, points:[
+    ["relationships","loyalty","retain customers","keep customers"],
+    ["repeat purchases","repeat sales","more sales"],
+    ["cheaper than new customers","word of mouth","data","recommend"]],
+    m:"CRM builds loyal customer relationships (1), leading to repeat sales (2), which is cheaper than winning new customers and encourages recommendations (3)."},
+  {q:"Explain one advantage to a business of selling online (e-commerce).", t:3, points:[
+    ["wider reach","global","more customers","larger market"],
+    ["lower costs","no shop","overheads","cheaper"],
+    ["24","open all the time","convenience","anytime"]],
+    m:"Selling online reaches a wider/global market (1), has lower costs with no physical shop (2), and lets customers buy 24/7 for convenience (3)."},
+
+  // ---- Topic 4 ----
+  {q:"Explain one advantage of flow production.", t:4, points:[
+    ["large quantities","high output","mass produce"],
+    ["low unit cost","economies of scale","cheaper per unit"],
+    ["fast","meet demand","consistent quality","continuous"]],
+    m:"Flow production makes large quantities (1) at a low unit cost through economies of scale (2), quickly and with consistent quality (3)."},
+  {q:"Explain one benefit to a business of adopting Just in Time (JIT).", t:4, points:[
+    ["less stock","low inventory","little stock held","no stock"],
+    ["storage costs","capital tied up","less space"],
+    ["cash flow","less waste","fewer obsolete"]],
+    m:"JIT means little stock is held (1), reducing storage costs and capital tied up (2), which improves cash flow and reduces waste (3)."},
+  {q:"Explain one advantage of capital-intensive production.", t:4, points:[
+    ["machinery","automation","technology"],
+    ["consistent quality","high output","fewer errors","reliable"],
+    ["lower unit cost","continuous","24 hours","long run"]],
+    m:"Using machinery (1) gives consistent quality and high output with fewer errors (2), and a lower unit cost as machines can run continuously (3)."},
+  {q:"Explain one problem of operating at full (100%) capacity utilisation.", t:4, points:[
+    ["no spare capacity","no time for maintenance","no room","cannot maintain"],
+    ["staff stress","pressure","breakdown","overworked"],
+    ["quality falls","cannot meet extra orders","turn away orders","mistakes"]],
+    m:"At full capacity there is no spare capacity for maintenance (1), staff and machines are under pressure (2), so quality may fall and the firm cannot meet extra orders (3)."},
+  {q:"Explain one benefit to a business of outsourcing.", t:4, points:[
+    ["lower cost","cheaper","reduce costs"],
+    ["specialist","expertise","skills","quality"],
+    ["focus on core","flexibility","concentrate on"]],
+    m:"Outsourcing can lower costs (1), give access to specialist expertise/quality (2) and let the business focus on its core activities (3)."},
+  {q:"Explain one benefit to a business of holding buffer inventory.", t:4, points:[
+    ["avoid running out","stock-outs","not run out","never out of stock"],
+    ["unexpected demand","continue production","meet demand","sudden demand"],
+    ["customer satisfaction","avoid lost sales","fulfil orders","keep customers"]],
+    m:"Buffer inventory helps avoid running out of stock (1), so the firm can meet unexpected demand and keep producing (2), maintaining customer satisfaction and avoiding lost sales (3)."},
+
+  // ---- Topic 5 ----
+  {q:"Explain one reason why a business needs finance.", t:5, points:[
+    ["start up","buy equipment","premises","set up"],
+    ["grow","expand","new products","invest"],
+    ["survive","day-to-day","wages","pay bills","running costs"]],
+    m:"A business needs finance to start up and buy equipment (1), to grow and expand (2), and to survive by paying day-to-day running costs such as wages (3)."},
+  {q:"Explain one reason why a profitable business might run out of cash.", t:5, points:[
+    ["customers pay late","receivables","credit","late payment"],
+    ["tied up in stock","bought assets","spent on equipment","inventory"],
+    ["cannot pay","unable to pay","insolvency","pay expenses","pay suppliers","wages due","bills"]],
+    m:"Customers may pay late (1) and cash may be tied up in stock or new assets (2), so despite making a profit the firm cannot pay its bills when due (3)."},
+  {q:"Explain one benefit to a business of using a budget.", t:5, points:[
+    ["control spending","monitor costs","control costs"],
+    ["targets","measure performance","compare"],
+    ["plan","allocate resources","motivate","coordinate"]],
+    m:"A budget helps control spending (1), sets targets to measure performance against (2), and aids planning and the allocation of resources (3)."},
+  {q:"Explain one advantage of using retained profit as a source of finance.", t:5, points:[
+    ["no interest","no repayment","free","no cost"],
+    ["no loss of control","no shares","keep ownership"],
+    ["available","quick","no debt","internal"]],
+    m:"Retained profit has no interest or repayments (1), involves no loss of control (2) and is readily available without taking on debt (3)."},
+  {q:"Explain one benefit to a business of break-even analysis.", t:5, points:[
+    ["break-even output","how many","how much to sell","units to sell","level of output needed"],
+    ["margin of safety","price or cost changes","target profit","effect of changes"],
+    ["aid decisions","planning","persuade lender","reduce risk"]],
+    m:"Break-even analysis shows how much must be sold to break even (1), the margin of safety and the effect of price/cost changes (2), which aids planning and decisions (3)."},
+  {q:"Explain one advantage of a bank loan as a source of finance.", t:5, points:[
+    ["lump sum","large amount","large sum"],
+    ["installments","spread over time","predictable","repayments"],
+    ["keep control","no shares","retain ownership"]],
+    m:"A bank loan provides a large lump sum (1), repaid in predictable installments over time (2), while the owners keep control as no shares are issued (3)."}
+];
+
 if (typeof module !== "undefined" && module.exports) {
-  module.exports = { QUIZ_DATA: QUIZ_DATA, gradeAnswer: gradeAnswer, normalizeText: normalizeText };
+  module.exports = {
+    QUIZ_DATA: QUIZ_DATA,
+    QUIZ_DATA_3: QUIZ_DATA_3,
+    gradeAnswer: gradeAnswer,
+    normalizeText: normalizeText
+  };
 }

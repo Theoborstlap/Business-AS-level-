@@ -27,8 +27,11 @@ Covers the full AS syllabus: Topics 1–5.
 ### Exam technique
 - **`AS_Business_9609_Exam_Technique.pdf`** — How to lay out 2, 3, 5, 8 and 12 mark answers to get all the marks (K/App/An/Ev), with worked model answers for each tariff.
 
-### Interactive definitions trainer (website)
-- **`index.html`** + **`quiz-data.js`** — A browser quiz covering all 127 two-mark definitions across the syllabus. Type your definition and it marks you **Correct (2/2)**, **Partially correct (1/2)** or **Wrong (0/2)**, then shows the model answer when you don't score full marks. Includes topic filters, shuffle and a live score.
+### Interactive trainer (website)
+- **`index.html`** + **`quiz-data.js`** — A browser quiz with two sections:
+  - **127 two-mark definitions** — marked **Correct (2/2)**, **Partially (1/2)** or **Wrong (0/2)**.
+  - **34 three-mark "explain" questions** — marked **Correct (3/3)**, **Partially (1-2/3)** or **Wrong (0/3)**.
+- Answer **in your own words**: marking is keyword/synonym based with light word-stemming (so plurals and verb forms match), and it shows which mark points you hit plus the model answer whenever you miss any marks. Includes a **question-type selector** (2-mark / 3-mark / mixed), **topic filters**, **shuffle** and a **live score**.
 
 **To use it:**
 - Easiest: enable **GitHub Pages** (repo *Settings > Pages > Source: Deploy from a branch > Branch: `main` / root*), then open `https://<your-username>.github.io/Business-AS-level-/`.

@@ -30,6 +30,7 @@
     color:var(--accent);background:rgba(56,189,248,.12);padding:4px 10px;border-radius:999px;margin-bottom:14px}
   .prompt{font-size:.85rem;color:var(--muted);margin-bottom:4px}
   .term{font-size:1.7rem;font-weight:700;margin:0 0 18px;line-height:1.2}
+  .term.q3{font-size:1.2rem;line-height:1.35}
   textarea{width:100%;min-height:92px;resize:vertical;border-radius:12px;border:1px solid var(--border);
     background:#0b1424;color:var(--text);padding:13px;font-size:1rem;font-family:inherit}
   .row{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
@@ -60,10 +61,15 @@
 <body>
 <header>
   <h1>AS Business 9609 - Definitions Trainer</h1>
-  <div class="sub">Type each 2-mark definition. Get feedback: correct (2/2), partially (1/2) or wrong (0/2).</div>
+  <div class="sub">Answer each question in your own words. Feedback: correct (full marks), partially correct, or wrong - the model answer is shown if you miss any marks.</div>
 </header>
 
 <div class="controls">
+  <select id="typeFilter" title="Question type">
+    <option value="2">2-mark definitions</option>
+    <option value="3">3-mark &quot;explain&quot; questions</option>
+    <option value="both">Both (mixed)</option>
+  </select>
   <select id="topicFilter" title="Filter by topic">
     <option value="all">All topics</option>
     <option value="1">Topic 1 - Business &amp; environment</option>
@@ -87,7 +93,7 @@
 
 <div class="card">
   <span class="tag" id="topicTag">Topic</span>
-  <div class="prompt">Define the term:</div>
+  <div class="prompt" id="promptLabel">Define the term:</div>
   <h2 class="term" id="term">...</h2>
   <textarea id="answer" placeholder="Type your definition here, then press Enter or Submit..."></textarea>
   <div class="row">
@@ -108,15 +114,19 @@
 <footer>
   Grading is keyword-based, so treat it as a guide - phrase answers in your own words and always
   read the model answer. Press <kbd>Enter</kbd> to submit, <kbd>Enter</kbd> again for the next question.
-  127 definitions covering the full AS syllabus.
+  127 two-mark definitions and 34 three-mark &quot;explain&quot; questions covering the full AS syllabus.
 </footer>
 
 <script src="quiz-data.js"></script>
 <script>
 (function(){
   var TOPIC_NAMES={1:"Topic 1",2:"Topic 2",3:"Topic 3",4:"Topic 4",5:"Topic 5"};
-  var all=QUIZ_DATA.slice();
-  var list=all.slice();
+  // Tag each item with its kind, max marks and prompt label.
+  var DEFS=QUIZ_DATA.map(function(x){var o=clone(x);o.kind="def";o.max=2;o.label="Define the term:";return o;});
+  var EXPS=QUIZ_DATA_3.map(function(x){var o=clone(x);o.kind="exp";o.max=3;o.label="Question (worth 3 marks):";return o;});
+  function clone(x){var o={};for(var k in x){o[k]=x[k];}return o;}
+
+  var list=[];
   var idx=0, answered=false;
   var stats={attempted:0, earned:0, possible:0, full:0};
 
@@ -125,9 +135,17 @@
 
   function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
 
+  function baseSet(){
+    var type=el("typeFilter").value;
+    if(type==="2") return DEFS.slice();
+    if(type==="3") return EXPS.slice();
+    return DEFS.concat(EXPS);
+  }
+
   function applyFilter(){
     var v=el("topicFilter").value;
-    list = v==="all" ? all.slice() : all.filter(function(x){return String(x.t)===v;});
+    list=baseSet();
+    if(v!=="all") list=list.filter(function(x){return String(x.t)===v;});
     shuffle(list);
     idx=0;
     render();
@@ -141,8 +159,10 @@
     el("submitBtn").textContent="Submit answer";
     if(list.length===0){el("term").textContent="No questions";return;}
     var item=list[idx];
+    el("promptLabel").textContent=item.label;
     el("term").textContent=item.q;
-    el("topicTag").textContent=TOPIC_NAMES[item.t];
+    el("term").className="term"+(item.kind==="exp"?" q3":"");
+    el("topicTag").textContent=TOPIC_NAMES[item.t]+(item.kind==="exp"?" - Explain [3]":" - Define [2]");
     el("posNum").textContent=(idx+1);
     el("posTot").textContent=list.length;
     answerBox.focus();
@@ -161,24 +181,26 @@
     var res=gradeAnswer(answerBox.value, item);
     answered=true;
     answerBox.disabled=true;
-    stats.attempted++; stats.earned+=res.marks; stats.possible+=2;
-    if(res.marks===2) stats.full++;
+    stats.attempted++; stats.earned+=res.marks; stats.possible+=res.max;
+    if(res.marks===res.max) stats.full++;
     updateScore();
 
     var cls, label, icon;
-    if(res.marks===2){cls="correct";label="Correct";icon="\u2714";}
-    else if(res.marks===1){cls="partial";label="Partially correct";icon="\u25D0";}
+    if(res.marks===res.max){cls="correct";label="Correct";icon="\u2714";}
+    else if(res.marks>0){cls="partial";label="Partially correct";icon="\u25D0";}
     else {cls="wrong";label="Wrong";icon="\u2717";}
 
     feedback.className="feedback show "+cls;
     el("verdict").innerHTML=icon+" "+label;
-    el("marksLine").textContent="You scored "+res.marks+" / 2 marks.";
-    el("pointsLine").innerHTML=
-      '<span class="pt"><span class="dot '+(res.p1?"ok":"no")+'"></span>Mark point 1</span>'+
-      '<span class="pt"><span class="dot '+(res.p2?"ok":"no")+'"></span>Mark point 2</span>';
+    el("marksLine").textContent="You scored "+res.marks+" / "+res.max+" marks.";
+    var dots="";
+    for(var i=0;i<res.hits.length;i++){
+      dots+='<span class="pt"><span class="dot '+(res.hits[i]?"ok":"no")+'"></span>Mark point '+(i+1)+'</span>';
+    }
+    el("pointsLine").innerHTML=dots;
 
     // Show model answer only when not full marks
-    el("modelBox").style.display = res.marks===2 ? "none" : "block";
+    el("modelBox").style.display = res.marks===res.max ? "none" : "block";
     el("modelText").textContent=item.m;
 
     el("submitBtn").textContent="Next question";
@@ -193,6 +215,7 @@
   el("skipBtn").addEventListener("click", next);
   el("shuffleBtn").addEventListener("click", function(){shuffle(list);idx=0;render();});
   el("topicFilter").addEventListener("change", applyFilter);
+  el("typeFilter").addEventListener("change", applyFilter);
   el("resetBtn").addEventListener("click", function(){
     stats={attempted:0,earned:0,possible:0,full:0};updateScore();
   });
@@ -200,9 +223,8 @@
     if(e.key==="Enter" && !e.shiftKey){e.preventDefault();submit();}
   });
 
-  shuffle(list);
+  applyFilter();
   updateScore();
-  render();
 })();
 </script>
 </body>
