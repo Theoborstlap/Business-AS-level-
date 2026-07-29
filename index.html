@@ -56,6 +56,17 @@
   .dot.ok{background:var(--green)} .dot.no{background:var(--red)}
   footer{margin-top:18px;color:var(--muted);font-size:.78rem;max-width:760px;text-align:center;line-height:1.5}
   kbd{background:#0b1424;border:1px solid var(--border);border-radius:5px;padding:1px 6px;font-size:.8rem}
+  .reviewHead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .reviewSummary{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+  .mistake{border:1px solid var(--border);border-left-width:4px;border-radius:12px;padding:14px 16px;margin-bottom:12px;background:var(--card2)}
+  .mistake.partial{border-left-color:var(--amber)}
+  .mistake.wrong{border-left-color:var(--red)}
+  .mistake .mq{font-weight:700;margin-bottom:6px}
+  .mistake .meta{font-size:.75rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px}
+  .mistake .lab{color:var(--muted);font-size:.8rem}
+  .mistake .ya{color:#fca5a5;margin:2px 0 8px}
+  .mistake .ma{color:#bbf7d0}
+  .empty{color:var(--muted);text-align:center;padding:20px}
 </style>
 </head>
 <body>
@@ -79,8 +90,9 @@
     <option value="5">Topic 5 - Finance &amp; accounting</option>
   </select>
   <div class="row" style="margin:0;flex:0">
+    <button id="reviewBtn" class="btn-ghost">Review mistakes (0)</button>
     <button id="shuffleBtn" class="btn-ghost">Shuffle</button>
-    <button id="resetBtn" class="btn-ghost">Reset score</button>
+    <button id="resetBtn" class="btn-ghost">Reset</button>
   </div>
 </div>
 
@@ -91,7 +103,7 @@
   <span>Full marks: <b id="fullCount">0</b></span>
 </div>
 
-<div class="card">
+<div class="card" id="quizCard">
   <span class="tag" id="topicTag">Topic</span>
   <div class="prompt" id="promptLabel">Define the term:</div>
   <h2 class="term" id="term">...</h2>
@@ -109,6 +121,18 @@
       <span id="modelText"></span>
     </div>
   </div>
+</div>
+
+<div class="card" id="reviewCard" style="display:none">
+  <div class="reviewHead">
+    <h2 style="margin:0;font-size:1.25rem">Review my mistakes</h2>
+    <div class="row" style="margin:0;flex:0">
+      <button id="retryBtn" class="btn-primary" style="flex:0;min-width:auto;padding:9px 14px">Retry these</button>
+      <button id="backBtn" class="btn-ghost">Back to quiz</button>
+    </div>
+  </div>
+  <div id="reviewSummary" class="reviewSummary"></div>
+  <div id="reviewList"></div>
 </div>
 
 <footer>
@@ -129,6 +153,7 @@
   var list=[];
   var idx=0, answered=false;
   var stats={attempted:0, earned:0, possible:0, full:0};
+  var mistakes=[]; // {item, your, marks, max}, deduped by question text
 
   var el=function(id){return document.getElementById(id);};
   var answerBox=el("answer"), feedback=el("feedback");
@@ -148,6 +173,8 @@
     if(v!=="all") list=list.filter(function(x){return String(x.t)===v;});
     shuffle(list);
     idx=0;
+    el("reviewCard").style.display="none";
+    el("quizCard").style.display="block";
     render();
   }
 
@@ -182,7 +209,8 @@
     answered=true;
     answerBox.disabled=true;
     stats.attempted++; stats.earned+=res.marks; stats.possible+=res.max;
-    if(res.marks===res.max) stats.full++;
+    if(res.marks===res.max){ stats.full++; removeMistake(item.q); }
+    else { recordMistake(item, answerBox.value, res.marks, res.max); }
     updateScore();
 
     var cls, label, icon;
@@ -211,14 +239,75 @@
     render();
   }
 
+  function removeMistake(q){
+    for(var i=0;i<mistakes.length;i++){ if(mistakes[i].item.q===q){ mistakes.splice(i,1); break; } }
+    updateReviewBtn();
+  }
+  function recordMistake(item, your, marks, max){
+    for(var i=0;i<mistakes.length;i++){ if(mistakes[i].item.q===item.q){ mistakes.splice(i,1); break; } }
+    mistakes.push({item:item, your:your, marks:marks, max:max});
+    updateReviewBtn();
+  }
+  function updateReviewBtn(){ el("reviewBtn").textContent="Review mistakes ("+mistakes.length+")"; }
+
+  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+  function showReview(){
+    el("quizCard").style.display="none";
+    el("reviewCard").style.display="block";
+    var box=el("reviewList");
+    if(mistakes.length===0){
+      el("reviewSummary").textContent="";
+      box.innerHTML='<div class="empty">No mistakes yet - answer some questions and any you miss marks on will appear here.</div>';
+      el("retryBtn").style.display="none";
+      window.scrollTo(0,0); return;
+    }
+    el("retryBtn").style.display="";
+    el("reviewSummary").textContent="You have "+mistakes.length+" question(s) to review. Read the model answer, then hit \u201CRetry these\u201D to attempt them again.";
+    var html="";
+    for(var i=0;i<mistakes.length;i++){
+      var mk=mistakes[i];
+      var cls = mk.marks===0 ? "wrong" : "partial";
+      var your = mk.your && mk.your.trim() ? esc(mk.your) : "(left blank)";
+      html+='<div class="mistake '+cls+'">'+
+        '<div class="meta">'+TOPIC_NAMES[mk.item.t]+' - scored '+mk.marks+' / '+mk.max+'</div>'+
+        '<div class="mq">'+esc(mk.item.q)+'</div>'+
+        '<div class="lab">Your answer:</div><div class="ya">'+your+'</div>'+
+        '<div class="lab">Model answer:</div><div class="ma">'+esc(mk.item.m)+'</div>'+
+      '</div>';
+    }
+    box.innerHTML=html;
+    window.scrollTo(0,0);
+  }
+
+  function backToQuiz(){
+    el("reviewCard").style.display="none";
+    el("quizCard").style.display="block";
+    render();
+  }
+
+  function retryMistakes(){
+    if(mistakes.length===0) return;
+    list=mistakes.map(function(m){return m.item;});
+    shuffle(list);
+    idx=0;
+    el("reviewCard").style.display="none";
+    el("quizCard").style.display="block";
+    render();
+  }
+
   el("submitBtn").addEventListener("click", submit);
   el("skipBtn").addEventListener("click", next);
   el("shuffleBtn").addEventListener("click", function(){shuffle(list);idx=0;render();});
   el("topicFilter").addEventListener("change", applyFilter);
   el("typeFilter").addEventListener("change", applyFilter);
   el("resetBtn").addEventListener("click", function(){
-    stats={attempted:0,earned:0,possible:0,full:0};updateScore();
+    stats={attempted:0,earned:0,possible:0,full:0};
+    mistakes=[]; updateReviewBtn(); updateScore();
   });
+  el("reviewBtn").addEventListener("click", showReview);
+  el("backBtn").addEventListener("click", backToQuiz);
+  el("retryBtn").addEventListener("click", retryMistakes);
   answerBox.addEventListener("keydown", function(e){
     if(e.key==="Enter" && !e.shiftKey){e.preventDefault();submit();}
   });
