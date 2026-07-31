@@ -15,9 +15,12 @@
 
 ### 1.1.1 The nature of business activity
 
+> **Business (2-mark definition):** an organisation that combines resources (factors of production) to produce goods or services in order to satisfy customers' needs and wants, usually to make a profit.
+
 **Purpose of business activity**
 - A business combines resources to produce goods/services that satisfy customers' **needs and wants**.
 - Core purpose: to identify needs, obtain resources, produce output, and sell it — usually to make a **profit** (private sector) or provide a **service** (public sector).
+- **Needs** = essentials for survival (food, shelter, water). **Wants** = things that improve quality of life but are not essential (unlimited).
 
 **Factors of production (LLCE)** — resources needed to produce goods/services:
 | Factor | Meaning | Reward earned |
@@ -28,15 +31,17 @@
 | **Enterprise** | The entrepreneur who takes risk and combines the other three | Profit |
 
 **Adding value**
+> **Added value (2-mark definition):** the difference between the price a business charges for a product and the cost of the bought-in materials/inputs used to make it — i.e. the extra worth created during production.
 - **Added value = selling price − cost of bought-in materials/inputs.**
 - It is the increase in worth a business creates as inputs are turned into outputs.
 - Ways to add value: branding, better quality, convenience, speed, design, customer service, unique features.
-- Higher added value → potential for higher profit and stronger competitive position. It does **not** automatically mean higher profit (other costs like labour still apply).
+- **Benefits of adding value:** allows a higher selling price, improves profit margin, differentiates from rivals, builds brand strength.
+- **Limitations:** may raise costs (better materials/design), competitors can copy it, customers may not pay more; it does **not** automatically mean higher profit (other costs like labour still apply).
 
 **Economic activity, choice and opportunity cost**
 - Resources are **scarce** but wants are **infinite** → the fundamental **economic problem**.
 - Scarcity forces **choice**.
-- **Opportunity cost** = the benefit of the next best alternative given up when a choice is made.
+> **Opportunity cost (2-mark definition):** the benefit of the next best alternative that is given up (foregone) when a choice is made between competing options.
 - Example: money spent on new machinery cannot be spent on marketing.
 
 **The dynamic business environment**
@@ -56,6 +61,10 @@
 | **Multinational (MNC)** | Has production/operations bases in more than one country |
 
 ### 1.1.2 The role of entrepreneurs and intrapreneurs
+
+> **Entrepreneur (2-mark definition):** a person who takes the financial risk of setting up and running a business, organising and combining the factors of production to produce goods or services.
+
+> **Intrapreneur (2-mark definition):** an employee within an existing business who uses entrepreneurial skills to develop new products, processes or ideas for that business, without bearing the personal financial risk.
 
 **Entrepreneur** = a person who takes the risk of setting up and running a business, combining the factors of production.
 
@@ -87,6 +96,8 @@
 - Increases exports and can attract investment.
 
 ### 1.1.3 Business plans
+
+> **Business plan (2-mark definition):** a written document that describes a business idea, its objectives and strategies, the target market, and its financial forecasts, used to guide the business and help raise finance.
 
 **Business plan** = a document describing a business, its objectives, strategies, the market it is in, and its financial forecasts.
 
@@ -129,9 +140,14 @@
 
 ### 1.2.2 Business ownership
 
+> **Unlimited liability (2-mark definition):** where the owner(s) are personally and fully responsible for all the debts of the business, so their personal assets can be taken to repay business debts.
+
+> **Limited liability (2-mark definition):** where the owners' (shareholders') responsibility for business debts is limited to the amount they invested, protecting their personal assets.
+
 **Unlimited liability** = owner is personally responsible for ALL business debts (personal assets at risk). Applies to sole traders and (ordinary) partnerships.
 
 **Limited liability** = owners' losses are limited to the amount they invested; personal assets are protected. Applies to shareholders of Ltd and Plc. (Requires the business to be an **incorporated** = separate legal identity.)
+- **Incorporation (2-mark definition):** the process of forming a company that has a separate legal identity from its owners, allowing it to own assets, owe debts and be sued in its own name.
 
 | Type | Key features | Advantages | Disadvantages |
 |---|---|---|---|
@@ -176,11 +192,19 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 
 ### 1.3.3 Business growth
 
-**Internal (organic) growth:** business grows using its own resources — more outlets, new products, more markets. Slower but lower risk, easier to manage, keeps control.
+> **Internal (organic) growth (2-mark definition):** expansion of a business using its own resources (e.g. opening new outlets or launching new products), rather than by joining with another firm.
+
+**Internal (organic) growth:** business grows using its own resources — more outlets, new products, more markets.
+- **Benefits:** lower risk, easier to manage/control, cheaper, keeps existing culture, financed from retained profit.
+- **Limitations:** slower, may be limited by size of the market, can be too slow to keep up with fast-growing rivals.
+
+> **External growth (2-mark definition):** expansion of a business by joining with, merging with, or taking over another business.
 
 **External growth (merger/takeover):**
 - **Merger:** two firms agree to join together (friendly).
 - **Takeover (acquisition):** one firm buys a controlling interest in another. **Hostile takeover** = target company's board does not agree.
+- **Benefits:** fast growth, instant market share, economies of scale, access to new assets/skills/markets.
+- **Limitations:** expensive, culture clashes, diseconomies of scale, integration problems, possible job losses/low morale.
 
 | Integration type | Meaning | Main benefit |
 |---|---|---|
@@ -211,7 +235,10 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 **Importance of objectives:** give direction/focus, aid decision-making, motivate staff, allow measurement of performance/success, help coordinate the business.
 
 **CSR & Triple Bottom Line:**
+> **Corporate social responsibility / CSR (2-mark definition):** the idea that businesses have a duty to act in the best interests of society and the environment, going beyond their legal obligations and the pursuit of profit.
 - **CSR** = the idea that businesses have a responsibility to society and the environment beyond making profit.
+- **Benefits of CSR:** better reputation/brand image, customer and staff loyalty, avoids legal problems, long-term sustainability.
+- **Limitations:** raises costs, may reduce short-term profit, can conflict with shareholder aims, hard to measure.
 - **Triple bottom line** = measuring success on three fronts:
   - **Profit** (economic/financial)
   - **People** (social)
@@ -235,6 +262,8 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 ## 1.5 Stakeholders
 
 ### 1.5.1 Business stakeholders
+> **Stakeholder (2-mark definition):** any individual or group that has an interest in a business because they are affected by, or can affect, its activities and decisions.
+
 **Stakeholder** = any individual/group with an interest in (affected by / can affect) the activities of a business.
 
 | Internal stakeholders | External stakeholders |
@@ -263,20 +292,30 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 ## 2.1 Human resource management
 
 ### 2.1.1 Purpose and roles of HRM
+> **Human resource management / HRM (2-mark definition):** the management function responsible for recruiting, developing, motivating and retaining a business's workforce so that it meets the organisation's objectives.
+
 HRM = managing the workforce to meet organisational objectives. Roles: **workforce planning, recruitment & selection, training & development, appraisal, managing dismissal/redundancy, welfare and relations.**
 
 ### 2.1.2 Workforce planning
 **Workforce plan** = identifying the number and skills of workers the business will need in the future, and how to meet that need.
 **Reasons/role:** ensures right people in right jobs at right time; plans for expansion, new technology, retirements.
 
-**Labour turnover** = % of workforce leaving in a year.
+> **Workforce planning (2-mark definition):** the process of forecasting the number of employees and the skills a business will need in the future, and planning how to meet that need.
+
+> **Labour turnover (2-mark definition):** the percentage of a business's workforce that leaves and has to be replaced over a given period (usually one year).
+- **Labour turnover** = % of workforce leaving in a year.
 > **Labour turnover = (number leaving in a year ÷ average number employed) × 100**
 
 - **High turnover implications:** higher recruitment/training costs, lost productivity, low morale — but may bring fresh ideas and lets business remove poor performers.
 - **Low turnover implications:** experienced/stable workforce, lower costs — but may cause lack of new ideas and block promotion.
 
 ### 2.1.3 Recruitment and selection
+> **Recruitment (2-mark definition):** the process of identifying a vacancy and attracting suitable candidates to apply for the job.
+> **Selection (2-mark definition):** the process of choosing the most suitable candidate for a job from those who have applied.
+
 **Recruitment process:**
+> **Job description (2-mark definition):** a document listing the duties, tasks and responsibilities that make up a particular job.
+> **Person specification (2-mark definition):** a document setting out the qualifications, skills, experience and personal qualities a suitable candidate for a job should have.
 - **Job description:** duties, tasks and responsibilities of the role.
 - **Person specification:** the qualities, skills, qualifications a suitable candidate should have.
 
@@ -293,6 +332,9 @@ HRM = managing the workforce to meet organisational objectives. Roles: **workfor
 **Employment contract** = legal document stating terms and conditions (pay, hours, duties, notice period).
 
 ### 2.1.4 Redundancy and dismissal
+> **Redundancy (2-mark definition):** when a worker loses their job because the job itself is no longer needed (e.g. due to closure or restructuring), not because of any fault of the worker.
+> **Dismissal (2-mark definition):** when a business ends a worker's contract of employment because of the worker's own poor conduct or performance.
+
 - **Redundancy:** the job no longer exists (not the worker's fault) — due to closure, restructuring, automation.
   - **Voluntary redundancy:** worker chooses to leave (often for a payment).
   - **Involuntary redundancy:** business selects who must leave.
@@ -317,6 +359,9 @@ HRM = managing the workforce to meet organisational objectives. Roles: **workfor
 
 ### 2.1.7 Management and workforce relations
 - **Cooperation** between management and workers benefits both: fewer disputes, higher productivity, better morale, shared problem-solving.
+> **Trade union (2-mark definition):** an organisation of workers that acts collectively to protect and promote its members' interests, such as pay and working conditions.
+> **Collective bargaining (2-mark definition):** the process by which a trade union negotiates pay and working conditions with an employer on behalf of all its members as a group.
+
 - **Trade union** = organisation representing workers' interests.
   - **Collective bargaining:** union negotiates pay/conditions on behalf of all members.
   - **Impact on employers:** slower decisions, possible strikes, but one point of negotiation and clearer communication.
@@ -325,6 +370,8 @@ HRM = managing the workforce to meet organisational objectives. Roles: **workfor
 ## 2.2 Motivation
 
 ### 2.2.1 Why motivate?
+> **Motivation (2-mark definition):** the internal desire or willingness of a person to put effort into achieving a goal, such as an employee working hard to meet business objectives.
+
 Motivated workers are more productive, produce higher quality, have lower absenteeism and turnover, and help achieve business objectives.
 
 ### 2.2.2 & 2.2.3 Human needs & Motivation theories
@@ -366,13 +413,23 @@ Motivated workers are more productive, produce higher quality, have lower absent
 | **Performance-related pay (PRP)** | Pay linked to appraised performance |
 | **Fringe benefits (perks)** | Non-cash extras: car, health insurance, discounts |
 
+- **Benefits of financial motivators:** directly reward effort, easy to understand, attract/retain staff, boost short-term output.
+- **Limitations:** costly, effect may be short-lived (Herzberg: pay is a hygiene factor), can encourage quantity over quality, may cause disputes over fairness.
+
 **Non-financial motivators:** training, opportunities for promotion, development, status, **job re-design**, team working, **empowerment** (giving control), participation, **job enrichment** (adding challenging/meaningful tasks), job enlargement, job rotation.
+> **Empowerment (2-mark definition):** giving employees the authority and responsibility to make their own decisions about how to do their work.
+> **Job enrichment (2-mark definition):** increasing the depth of a job by adding more challenging and meaningful tasks and greater responsibility to motivate the worker.
+- **Benefits of non-financial motivators:** longer-lasting motivation, low/no direct cost, improve loyalty and job satisfaction, develop skills.
+- **Limitations:** slower to take effect, may not suit staff who mainly want money, empowerment/enrichment can add pressure if unsupported.
 
 **Employee participation in management/control:** works councils, worker directors, quality circles, team meetings, share-ownership schemes.
 
 ## 2.3 Management
 
 ### 2.3.1 Managers
+> **Management (2-mark definition):** the process of planning, organising, directing and controlling a business's resources (people, finance, materials) in order to achieve its objectives.
+> **Leadership (2-mark definition):** the ability to influence, inspire and guide others towards achieving a common goal.
+
 **Traditional functions:** **Planning, Organising, Directing (commanding/coordinating), Controlling.**
 
 - **Henri Fayol — five functions:** planning, organising, commanding, coordinating, controlling.
@@ -403,6 +460,8 @@ Motivated workers are more productive, produce higher quality, have lower absent
 ## 3.1 The nature of marketing
 
 ### 3.1.1 Role of marketing
+> **Marketing (2-mark definition):** the management process of anticipating, identifying and satisfying customer needs and wants profitably.
+
 **Marketing** = anticipating, identifying and satisfying customer needs profitably.
 - **Marketing objectives:** goals of the marketing dept (increase sales, market share, brand awareness, launch products, enter new markets).
 - **Link to corporate objectives:** marketing objectives must support the overall corporate objectives (e.g. corporate goal "growth" → marketing goal "increase market share by 10%").
@@ -420,6 +479,9 @@ Motivated workers are more productive, produce higher quality, have lower absent
 - **Local / national / international markets** — geographic scope.
 - **Product orientation:** focus on making the product then finding buyers (product-led). Works for technical/innovative goods.
 - **Customer (market) orientation:** research customer needs first, then produce to match. Lower risk, more responsive.
+> **Market share (2-mark definition):** the proportion of total sales in a market that is held by one business or product, expressed as a percentage.
+> **Market growth (2-mark definition):** the percentage increase in the size (sales/value) of a market over a given period of time.
+
 - **Market share = (business's sales ÷ total market sales) × 100**
 - **Market growth = (change in market size ÷ original market size) × 100**
 - **Implications:** rising market share = competitive strength/possible economies of scale; rising market growth = attractive market but may draw new entrants.
@@ -436,7 +498,12 @@ Motivated workers are more productive, produce higher quality, have lower absent
 | Pros | Economies of scale, high sales volume, brand awareness | Less competition, higher prices/margins, loyal customers, focused |
 | Cons | High competition, high setup cost, inflexible | Small sales volume, vulnerable if segment shrinks, limited growth |
 
+> **Mass marketing (2-mark definition):** aiming a product at the whole market or a very large section of it, with a single undifferentiated marketing mix.
+> **Niche marketing (2-mark definition):** aiming a product at a small, specific and often specialised segment of a market.
+
 ### 3.1.6 Market segmentation
+> **Market segmentation (2-mark definition):** dividing a market into distinct groups of customers who share similar characteristics or needs, so each group can be targeted separately.
+
 Dividing a market into groups with similar characteristics.
 - **Geographic:** by region/country/climate.
 - **Demographic:** by age, gender, income, occupation, family, religion.
@@ -456,10 +523,16 @@ Dividing a market into groups with similar characteristics.
 Identify market features (size, growth, competitors) and customer/consumer characteristics, profiles, wants and needs → reduces risk in decisions.
 
 ### 3.2.2 Primary vs secondary research
+> **Market research (2-mark definition):** the collection, recording and analysis of data about a market, its customers and competitors, to inform marketing decisions.
+> **Primary research (2-mark definition):** the collection of new, first-hand data gathered directly for a specific purpose (e.g. via surveys or interviews).
+> **Secondary research (2-mark definition):** the use of existing data that has already been collected by someone else for another purpose (e.g. government statistics, reports).
+
 - **Primary (field) research:** new, first-hand data collected for a specific purpose. Methods: surveys/questionnaires, interviews, observation, focus groups, test marketing.
-  - **Useful:** up-to-date, specific, exclusive to the business. **Limitations:** expensive, time-consuming, risk of bias/small sample.
+  - **Benefits:** up-to-date, specific to the business's needs, exclusive (competitors don't have it).
+  - **Limitations:** expensive, time-consuming, risk of bias/small unrepresentative sample.
 - **Secondary (desk) research:** existing data collected by others. Sources: government stats, market reports, internet, internal records, media.
-  - **Useful:** cheaper, quick, broad. **Limitations:** may be out of date, not specific, available to competitors.
+  - **Benefits:** cheaper, quick to obtain, broad overview available.
+  - **Limitations:** may be out of date, not specific to the business, also available to competitors.
 
 ### 3.2.3 Sampling
 - **Sample** = a group selected to represent the whole population.
@@ -476,6 +549,8 @@ Identify market features (size, growth, competitors) and customer/consumer chara
 ## 3.3 The marketing mix (4Ps)
 
 ### 3.3.1 The 4Ps
+> **Marketing mix (2-mark definition):** the combination of factors — Product, Price, Promotion and Place (the 4Ps) — that a business uses to market its product effectively to the target market.
+
 **Product, Price, Promotion, Place** — must work together consistently and suit the target market.
 
 ### 3.3.2 Product
@@ -483,9 +558,13 @@ Identify market features (size, growth, competitors) and customer/consumer chara
 - **Tangible attributes:** physical features, quality, design. **Intangible attributes:** brand image, reputation, after-sales service.
 - **Product development** keeps the range fresh and competitive.
 - **Product differentiation:** making a product distinct from rivals.
+> **Product differentiation (2-mark definition):** making a product appear distinct from, and more attractive than, competing products in the eyes of customers.
+> **Unique Selling Point / USP (2-mark definition):** the distinctive feature of a product that sets it apart from competitors and gives customers a reason to buy it.
 - **Unique Selling Point (USP):** the feature that makes a product stand out and gives a reason to buy.
 
 ### 3.3.3 Product portfolio analysis
+> **Product life cycle (2-mark definition):** the stages a product passes through from its launch to its withdrawal from the market — development, introduction, growth, maturity and decline.
+
 **Product life cycle stages:** Development → Introduction → Growth → Maturity → Decline.
 - **Extension strategies** (to prolong maturity): new packaging, new uses, new markets, price changes, promotion, product updates.
 
@@ -538,16 +617,23 @@ Getting the product to the customer in the right place at the right time.
 - Operations **add value** by turning inputs into higher-worth outputs.
 
 ### 4.1.2 Efficiency, effectiveness, productivity, sustainability
+> **Productivity (2-mark definition):** a measure of the output produced per unit of input (e.g. per worker or per machine) over a given period; higher productivity means more efficient use of resources.
+> **Efficiency (2-mark definition):** producing the maximum output from the minimum level of inputs, i.e. with the least waste and lowest cost per unit.
+
 - **Efficiency:** producing with minimum waste/cost (output per unit of input).
 - **Effectiveness:** meeting objectives/customer needs (doing the right things).
 - **Productivity:** output per unit of input in a period.
 - **Sustainability:** operating without harming the ability of future generations (environment).
+- **Sustainability (2-mark def):** producing in a way that meets present needs without harming the ability of future generations to meet their own needs.
 
 > **Labour productivity = total output ÷ number of employees** (per period)
 
 - **Improving sustainability** (recycling, renewable energy, less waste): + better image, lower long-term costs, meets regulation; − high initial cost, may raise prices.
 
 ### 4.1.3 Capital vs labour intensive
+> **Capital-intensive production (2-mark definition):** production that relies mainly on machinery and equipment, with a high proportion of capital relative to labour.
+> **Labour-intensive production (2-mark definition):** production that relies mainly on human effort (workers), with a high proportion of labour relative to capital.
+
 | | Capital intensive | Labour intensive |
 |---|---|---|
 | Meaning | Relies mainly on machinery | Relies mainly on workers |
@@ -567,9 +653,12 @@ Getting the product to the customer in the right place at the right time.
 ## 4.2 Inventory management
 
 ### 4.2.1 Managing inventory
+> **Inventory / stock (2-mark definition):** the raw materials, work in progress and finished goods that a business holds at a given time.
+> **Inventory management (2-mark definition):** the process of controlling the level of stock a business holds so that it meets demand while minimising the costs of holding it.
+
 - **Types of inventory:** raw materials, work in progress, finished goods.
 - **Benefits of holding inventory:** meet demand, avoid stock-outs, cope with delays, allow production to continue.
-- **Costs of holding inventory:** storage/warehouse cost, tied-up capital (opportunity cost), risk of waste/obsolescence/theft.
+- **Limitations/costs of holding inventory:** storage/warehouse cost, tied-up capital (opportunity cost), risk of waste/obsolescence/theft.
 
 **Inventory control chart terms:**
 - **Buffer inventory:** minimum stock held as a safety margin.
@@ -581,6 +670,8 @@ Getting the product to the customer in the right place at the right time.
 - **Supply Chain Management (SCM):** managing the flow of goods from supplier to customer efficiently → lower costs, reliable supply, better quality.
 
 ### 4.2.2 Just in Time (JIT) vs Just in Case (JIC)
+> **Just in Time / JIT (2-mark definition):** an inventory system where materials and components arrive exactly when they are needed for production, so little or no stock is held.
+
 - **JIT:** inputs arrive exactly when needed; little/no inventory held.
   - + Reduces storage costs, less waste, frees up capital, improves cash flow.
   - − No buffer → vulnerable to supply delays, needs reliable suppliers, no economies of bulk buying.
@@ -590,6 +681,8 @@ Getting the product to the customer in the right place at the right time.
 ## 4.3 Capacity utilisation and outsourcing
 
 ### 4.3.1 Capacity utilisation
+> **Capacity utilisation (2-mark definition):** the proportion of a business's maximum possible output that is actually being produced, expressed as a percentage.
+
 > **Capacity utilisation = (actual output ÷ maximum possible output) × 100**
 
 - **Under-utilisation (low %):** high fixed cost per unit, wasted resources, staff may feel insecure — but room to grow, can meet sudden orders.
@@ -597,6 +690,8 @@ Getting the product to the customer in the right place at the right time.
 - **Improving utilisation:** increase sales/demand (marketing), reduce capacity (rationalisation), subcontract work in, cut prices, new products.
 
 ### 4.3.2 Outsourcing
+> **Outsourcing (2-mark definition):** paying an outside/external firm to carry out tasks or produce goods that were previously done within the business itself.
+
 Using an outside firm to carry out tasks previously done in-house.
 - + Lower costs, access to specialist skills, flexibility, focus on core activities.
 - − Less control over quality, reliability risk, communication issues, loss of confidentiality, possible job losses (morale).
@@ -615,6 +710,8 @@ Using an outside firm to carry out tasks previously done in-house.
 - **Long-term finance:** to fund non-current assets/expansion (loans, share capital, mortgages).
 
 **Cash vs profit:**
+> **Cash (2-mark definition):** the money a business has available immediately (in notes, coins and its bank current account) to pay its short-term bills.
+> **Profit (2-mark definition):** the amount left when a business's total costs are subtracted from its total revenue over a period of time.
 - **Cash** = money available now to pay bills (liquidity).
 - **Profit** = revenue − total costs over a period.
 - A business can be **profitable but run out of cash** (e.g. customers pay late, money tied in stock) → this causes failure.
@@ -625,6 +722,8 @@ Using an outside firm to carry out tasks previously done in-house.
 - **Administration:** an insolvent company is run by an administrator to try to rescue it/repay creditors.
 
 ### 5.1.2 Working capital
+> **Working capital (2-mark definition):** the finance available to a business for its day-to-day running, calculated as current assets minus current liabilities.
+
 > **Working capital = current assets − current liabilities**
 - Finance available for **day-to-day** running. Too little → can't pay bills (illiquid); too much → idle resources.
 - **Managing trade receivables** (money owed by customers): collect promptly, credit checks, discounts for early payment.
@@ -639,7 +738,12 @@ Using an outside firm to carry out tasks previously done in-house.
 - Ltd: can sell shares privately. Plc: can sell shares to public (largest access to finance).
 
 ### 5.2.2 Internal vs external sources
+> **Internal finance (2-mark definition):** finance raised from within the business itself, such as retained profit, sale of assets or owner's savings.
+> **External finance (2-mark definition):** finance raised from sources outside the business, such as bank loans, share issues or trade credit.
+
 **Internal (from within the business):**
+- **Benefits of internal finance:** usually cheaper (no interest), no loss of control, quick to access, no debt taken on.
+- **Limitations:** limited to what the business has, may not be enough for large expansion, using cash/assets reduces flexibility.
 - Owner's investment (personal savings).
 - Retained earnings (reinvested profit).
 - Sale of unwanted assets.
@@ -658,7 +762,11 @@ Match the source to the situation: e.g. new machinery (long-term) → bank loan/
 ## 5.3 Forecasting and managing cash flow
 
 ### 5.3.1 Cash flow forecasts
+> **Cash flow forecast (2-mark definition):** a prediction of the expected cash inflows and cash outflows of a business over a future period, showing the net cash flow and closing balance each month.
+
 **Cash flow forecast** = a prediction of the cash coming in (inflows) and going out (outflows) over a future period.
+- **Benefits:** spots cash shortages early, supports loan applications, aids planning/spending decisions.
+- **Limitations:** based on estimates that may be wrong, time-consuming, cannot predict sudden changes (recession, lost order).
 **Purpose:** spot cash shortages early, arrange finance in advance, plan spending, support a loan application.
 
 **Key calculations:**
@@ -675,6 +783,9 @@ Match the source to the situation: e.g. new machinery (long-term) → bank loan/
 
 ### 5.4.1 Cost information
 Accurate costs are needed for pricing, monitoring performance, and decision-making.
+> **Fixed costs (2-mark definition):** costs that do not change with the level of output in the short run (e.g. rent, salaries, insurance).
+> **Variable costs (2-mark definition):** costs that change directly in proportion to the level of output (e.g. raw materials, piece-rate wages).
+
 - **Fixed costs:** do not change with output (rent, salaries, insurance).
 - **Variable costs:** change directly with output (raw materials, piece-rate wages).
 - **Direct costs:** clearly linked to a product (materials for that product).
@@ -700,6 +811,10 @@ Accurate costs are needed for pricing, monitoring performance, and decision-maki
 - **Special order decisions (contribution):** accept an order if the price is **above variable cost per unit** (so it makes a positive contribution) — provided spare capacity exists and normal sales aren't harmed.
 
 ### 5.4.4 Break-even analysis
+> **Break-even point (2-mark definition):** the level of output at which a business's total revenue exactly equals its total costs, so it makes neither a profit nor a loss.
+> **Contribution per unit (2-mark definition):** the amount each unit sold contributes towards fixed costs and profit, calculated as selling price per unit minus variable cost per unit.
+> **Margin of safety (2-mark definition):** the amount by which a business's current output exceeds its break-even output; it shows how far sales can fall before a loss is made.
+
 **Break-even point** = the level of output where **total revenue = total costs** (no profit, no loss).
 
 > **Break-even output (units) = fixed costs ÷ contribution per unit**
@@ -710,12 +825,14 @@ Accurate costs are needed for pricing, monitoring performance, and decision-maki
 
 **Break-even chart:** x-axis = output, y-axis = costs/revenue. Lines: fixed cost (horizontal), total cost, total revenue. Break-even point = where total revenue crosses total cost. Margin of safety = distance from break-even to actual output.
 
-**Uses:** shows break-even level, how much output needed for target profit, effect of price/cost changes, margin of safety.
+**Benefits of break-even analysis:** simple/quick, shows break-even level and margin of safety, tests effect of price/cost changes, aids decisions and loan applications.
 **Limitations:** assumes all output is sold, assumes costs/price are constant (unrealistic), fixed costs may change (step costs), ignores changing conditions, only as good as the data used.
 
 ## 5.5 Budgets
 
 ### 5.5.1 Meaning and purpose
+> **Budget (2-mark definition):** a detailed financial plan or target for revenue, costs or profit for a future period, agreed in advance.
+
 **Budget** = a financial plan/target for a future period.
 **Uses:** measure performance, allocate resources, control and monitor the business, set targets, coordinate departments.
 
@@ -728,6 +845,8 @@ Accurate costs are needed for pricing, monitoring performance, and decision-maki
 - **Zero-based budgeting (ZBB):** every budget starts from zero; all spending must be justified each period — avoids waste but time-consuming.
 
 ### 5.5.2 Variances
+> **Variance (2-mark definition):** the difference between a budgeted (planned) figure and the actual figure achieved, judged as favourable or adverse by its effect on profit.
+
 **Variance** = the difference between the budgeted figure and the actual figure.
 - **Favourable variance:** actual result is better for the business (actual revenue higher, or actual costs lower than budget).
 - **Adverse (unfavourable) variance:** actual result is worse (actual revenue lower, or actual costs higher than budget).
