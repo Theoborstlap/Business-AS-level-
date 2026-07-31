@@ -38,6 +38,14 @@ Covers the full AS syllabus: Topics 1–5.
 - Easiest: enable **GitHub Pages** (repo *Settings > Pages > Source: Deploy from a branch > Branch: `main` / root*), then open `https://<your-username>.github.io/Business-AS-level-/`.
 - Or download `index.html` and `quiz-data.js` into the same folder and open `index.html` in any browser.
 
+### AI Answer Generator (website)
+- **`answer-generator.html`** — A browser tool where you **paste or photograph any 9609 question** and get a **full-mark model answer** with every mark tagged inline **[K] / [App] / [An] / [Ev]**, plus a "where the marks come from" breakdown, key words to include, and an "ask yourself" checklist.
+- Adapts the answer structure to the mark tariff (2 / 3 / 5 / 8 / 12 marks) — including a proper judgement paragraph for evaluation questions — and can read the question straight from an uploaded image or PDF.
+- Powered by Google's Gemini API using a **"bring your own key"** model: you paste a **free** Gemini API key (from [aistudio.google.com/apikey](https://aistudio.google.com/apikey)) once. The key is stored **only in your browser's local storage** and sent **directly to Google** — it is never stored on the site or committed to the repo, so it stays private even though the site is public.
+- Reachable from a link at the top of the definitions trainer (`index.html`).
+
+> ⚠️ Answers are AI-generated model guidance aligned to 9609 mark-scheme conventions — a study aid, **not** official Cambridge marking. Always sense-check against your notes and the real mark scheme.
+
 ## Suggested revision routine
 1. Read the relevant section of **Notes**.
 2. Take the **Mini-Test** for that topic (closed book).
