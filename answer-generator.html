@@ -36,6 +36,7 @@
   .btn-primary{background:var(--accent);color:#04283a;border-color:transparent;font-weight:700}
   .btn-primary:hover{filter:brightness(1.08)}
   .btn-primary:disabled{opacity:.5;cursor:not-allowed;filter:none}
+  .linkbtn{background:none;border:none;color:var(--accent);padding:0;font-size:.72rem;text-transform:none;letter-spacing:0;cursor:pointer;text-decoration:underline}
   .hint{font-size:.78rem;color:var(--muted);margin-top:6px;line-height:1.5}
   .keystatus{font-size:.78rem;margin-top:6px}
   .keystatus.ok{color:var(--green)} .keystatus.no{color:var(--amber)}
@@ -85,7 +86,7 @@
   <h1>AS Business 9609 - AI Answer Generator</h1>
   <div class="sub">Type or photograph any 9609 question. You get a full-mark model answer with every mark tagged
     <span class="tagK">K</span> <span class="tagApp">App</span> <span class="tagAn">An</span> <span class="tagEv">Ev</span>,
-    plus where the marks come from, key words and an "ask yourself" checklist.
+    plus where the marks come from, key words and an "ask yourself" checklist. Powered by Anthropic's Claude.
     &nbsp;<a href="index.html">&larr; Back to the definitions trainer</a></div>
 </header>
 
@@ -93,15 +94,16 @@
 <div class="card">
   <div class="keyrow">
     <div>
-      <label for="apiKey">Google Gemini API key</label>
-      <input id="apiKey" type="password" placeholder="Paste your key (AIza...) - stored only in this browser" autocomplete="off">
+      <label for="apiKey">Anthropic Claude API key</label>
+      <input id="apiKey" type="password" placeholder="Paste your key (sk-ant-...) - stored only in this browser" autocomplete="off">
     </div>
     <button id="saveKey" class="btn-ghost">Save key</button>
     <button id="clearKey" class="btn-ghost">Forget</button>
   </div>
   <div id="keyStatus" class="keystatus no">No key saved yet.</div>
-  <div class="hint">Get a free key at <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a>.
-    The key is saved in your browser's local storage only and sent directly to Google - it is never stored on this site or committed to GitHub.</div>
+  <div class="hint">Create a key at <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener">console.anthropic.com/settings/keys</a>
+    (the Claude API is pay-as-you-go and needs a little billing credit - it is not free like some others).
+    The key is saved in your browser's local storage only and sent directly to Anthropic - it is never stored on this site or committed to GitHub.</div>
 </div>
 
 <!-- QUESTION INPUT -->
@@ -122,12 +124,14 @@
       </select>
     </div>
     <div>
-      <label for="model">AI model</label>
+      <label for="model">Claude model <button type="button" id="loadModels" class="linkbtn">(load my models)</button></label>
       <select id="model">
-        <option value="gemini-2.5-flash">gemini-2.5-flash (fast, free tier)</option>
-        <option value="gemini-2.5-pro">gemini-2.5-pro (highest quality)</option>
-        <option value="gemini-3-flash-preview">gemini-3-flash-preview</option>
+        <option value="claude-sonnet-4-5">claude-sonnet-4-5 (recommended)</option>
+        <option value="claude-opus-4-1">claude-opus-4-1 (highest quality)</option>
+        <option value="claude-3-7-sonnet-latest">claude-3-7-sonnet-latest</option>
+        <option value="claude-3-5-haiku-latest">claude-3-5-haiku-latest (cheapest)</option>
       </select>
+      <div class="hint" id="modelHint">Unsure which models your key can use? Click "load my models".</div>
     </div>
   </div>
 
@@ -169,8 +173,21 @@
 <script>
 (function(){
   var el=function(id){return document.getElementById(id);};
-  var KEY_LS="gemini_api_key";
+  var KEY_LS="anthropic_api_key";
+  var API_URL="https://api.anthropic.com/v1/messages";
+  var MODELS_URL="https://api.anthropic.com/v1/models?limit=100";
+  var API_VERSION="2023-06-01";
   var files=[]; // {name, mime, data(base64), isPdf}
+
+  function getKey(){ return (localStorage.getItem(KEY_LS)||el("apiKey").value).trim(); }
+  function authHeaders(){
+    return {
+      "content-type":"application/json",
+      "x-api-key":getKey(),
+      "anthropic-version":API_VERSION,
+      "anthropic-dangerous-direct-browser-access":"true"
+    };
+  }
 
   /* ---------- API key handling ---------- */
   function refreshKeyStatus(){
@@ -181,11 +198,35 @@
   }
   el("saveKey").addEventListener("click",function(){
     var v=el("apiKey").value.trim();
-    if(!v){ alert("Paste your Gemini API key first."); return; }
+    if(!v){ alert("Paste your Claude API key first."); return; }
     localStorage.setItem(KEY_LS,v); refreshKeyStatus();
   });
   el("clearKey").addEventListener("click",function(){
     localStorage.removeItem(KEY_LS); el("apiKey").value=""; refreshKeyStatus();
+  });
+
+  /* ---------- Load available models ---------- */
+  el("loadModels").addEventListener("click",function(){
+    if(!getKey()){ el("modelHint").textContent="Add your Claude API key first."; return; }
+    el("modelHint").textContent="Loading your models...";
+    fetch(MODELS_URL,{method:"GET", headers:authHeaders()})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
+      .then(function(res){
+        if(!res.ok || res.j.error){
+          el("modelHint").textContent="Could not load models: "+((res.j.error&&res.j.error.message)||"check your key.");
+          return;
+        }
+        var list=res.j.data||[];
+        if(!list.length){ el("modelHint").textContent="No models returned for this key."; return; }
+        var sel=el("model"); sel.innerHTML="";
+        list.forEach(function(m){
+          var o=document.createElement("option");
+          o.value=m.id; o.textContent=(m.display_name||m.id)+" ("+m.id+")";
+          sel.appendChild(o);
+        });
+        el("modelHint").textContent="Loaded "+list.length+" model(s) available to your key.";
+      })
+      .catch(function(e){ el("modelHint").textContent="Network error loading models: "+e.message; });
   });
 
   /* ---------- File upload ---------- */
@@ -267,8 +308,8 @@
   el("generate").addEventListener("click", generate);
 
   function generate(){
-    var key=(localStorage.getItem(KEY_LS)||el("apiKey").value).trim();
-    if(!key){ showStatus("Add your Gemini API key at the top first.", true); return; }
+    var key=getKey();
+    if(!key){ showStatus("Add your Claude API key at the top first.", true); return; }
     var q=el("question").value.trim();
     if(!q && files.length===0){ showStatus("Type a question or upload a photo/PDF of one.", true); return; }
 
@@ -278,46 +319,52 @@
     if(tariff!=="auto"){ userText+="\n\nThis question is worth "+tariff+" marks - answer it as a "+tariff+"-mark question."; }
     else { userText+="\n\nDetect the mark tariff from the question (look for a number in brackets or the command word) and state which tariff you used."; }
 
-    var parts=[{text:userText}];
-    files.forEach(function(f){ parts.push({inline_data:{mime_type:f.mime, data:f.data}}); });
+    // Build Claude message content blocks
+    var content=[];
+    files.forEach(function(f){
+      if(f.isPdf){
+        content.push({type:"document", source:{type:"base64", media_type:"application/pdf", data:f.data}});
+      } else {
+        content.push({type:"image", source:{type:"base64", media_type:f.mime, data:f.data}});
+      }
+    });
+    content.push({type:"text", text:userText});
 
     var body={
-      systemInstruction:{parts:[{text:SYSTEM}]},
-      contents:[{role:"user", parts:parts}],
-      generationConfig:{temperature:0.4, topP:0.95, maxOutputTokens:4096}
+      model:model,
+      max_tokens:4096,
+      temperature:0.4,
+      system:SYSTEM,
+      messages:[{role:"user", content:content}]
     };
 
-    var url="https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(model)+":generateContent?key="+encodeURIComponent(key);
     setBusy(true);
     showStatus('<span class="spin"></span>Generating your mark-tagged answer...', false);
 
-    fetch(url,{method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)})
+    fetch(API_URL,{method:"POST", headers:authHeaders(), body:JSON.stringify(body)})
       .then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
       .then(function(res){
         setBusy(false);
         if(!res.ok || res.j.error){
-          var msg=res.j.error ? res.j.error.message : ("Request failed ("+res.j.status+").");
+          var msg=res.j.error ? res.j.error.message : ("Request failed ("+(res.j.type||"error")+").");
           showStatus("Error: "+esc(msg), true); return;
         }
         var text=extractText(res.j);
-        if(!text){ showStatus("The model returned no text. Try again, or switch model.", true); return; }
+        if(!text){ showStatus("The model returned no text. Try again, or pick another model.", true); return; }
         renderOutput(text);
         hideStatus();
       })
       .catch(function(e){
         setBusy(false);
-        showStatus("Network error: "+esc(e.message)+". Check your key and connection.", true);
+        showStatus("Network error: "+esc(e.message)+". Check your key and connection. (If you see a CORS error, your network may be blocking the Anthropic API.)", true);
       });
   }
 
   function extractText(j){
     try{
-      var c=j.candidates&&j.candidates[0];
-      if(!c) return "";
-      if(c.content&&c.content.parts){
-        return c.content.parts.map(function(p){return p.text||"";}).join("");
-      }
-      return "";
+      if(!j.content) return "";
+      return j.content.filter(function(b){return b.type==="text";})
+                      .map(function(b){return b.text||"";}).join("");
     }catch(e){ return ""; }
   }
 
