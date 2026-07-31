@@ -174,6 +174,29 @@
 - **Advantages:** raises far more capital, limited liability retained, greater status, growth possible.
 - **Disadvantages:** loss of control, risk of takeover, must disclose accounts, divorce of ownership and control, short-termism pressure.
 
+**Common ownership-change chains (write these as analysis chains in the exam):**
+
+- **Sole trader → Partnership**
+  - Takes on partners → *because* more owners inject capital and share skills → *leads to* more finance and a wider range of expertise → *therefore* the business can expand and cover more work — **but** profit and decision-making must now be shared, which can cause disputes.
+
+- **Partnership → Private limited company (Ltd)**
+  - Becomes incorporated → *because* the owners gain **limited liability** and can sell shares privately → *leads to* personal assets being protected and easier access to capital → *therefore* owners can take bigger risks and grow — **but** accounts must be published and there is more legal/admin cost.
+
+- **Ltd → Public limited company (Plc) [floating / IPO]**
+  - Floats on the stock exchange → *because* shares can now be sold to the public → *leads to* a large injection of share capital → *therefore* the firm can fund major expansion/investment → **however** ownership is diluted → *leads to* possible loss of control and risk of a hostile takeover → *therefore* the original owners may lose their business or be pressured into short-term profit decisions.
+
+- **Plc → private (management/private buy-out)**
+  - Taken back into private ownership → *because* owners want to escape stock-market pressure and disclosure rules → *leads to* freedom to focus on the long term without public scrutiny → *therefore* decisions can be made faster and more privately — **but** access to large-scale share capital is lost.
+
+- **Family business → bringing in external managers / becoming a company**
+  - Recruits professional managers → *because* the firm has outgrown family expertise → *leads to* better-quality management and new ideas → *therefore* performance and growth may improve — **but** family control weakens and culture/values may change.
+
+- **Public sector → private sector (privatisation)**
+  - State-owned firm is sold to private owners → *because* private ownership brings a profit motive and competition → *leads to* pressure to cut costs and improve efficiency → *therefore* prices/service may improve — **however** the profit focus → *leads to* possible cuts to unprofitable but socially important services.
+
+- **Independent business → Franchise (franchisor grants franchises)**
+  - Expands by franchising → *because* franchisees provide the capital and run each outlet → *leads to* rapid, low-cost growth for the franchisor → *therefore* the brand spreads quickly — **but** control over quality/consistency across outlets is reduced.
+
 ---
 
 ## 1.3 Size of business
@@ -908,6 +931,43 @@ Accurate costs are needed for pricing, monitoring performance, and decision-maki
 | Break-even output | Fixed costs ÷ contribution per unit |
 | Margin of safety | Actual output − break-even output |
 | Variance | Actual figure − budgeted figure |
+
+---
+
+# COMMON ANALYSIS CHAINS (chain reactions for AO3 marks)
+
+Use these ready-made *point → because → leads to → therefore* chains in "Analyse", "Explain" and evaluation answers. Always **apply** them to the business in the case study.
+
+### Topic 1 — Business & Environment
+- **Adding value:** improves design/branding → *because* customers see the product as worth more → *leads to* ability to charge a higher price/margin → *therefore* higher profit and stronger competitiveness.
+- **Poor cash flow:** customers pay late → *because* cash coming in is delayed → *leads to* not enough cash to pay wages/suppliers → *therefore* the business may become insolvent even if profitable.
+- **Meeting stakeholder needs (workers):** raises wages → *because* staff feel valued and motivated → *leads to* higher productivity and lower labour turnover → *therefore* lower recruitment costs and better output — **but** higher wage costs reduce short-term profit.
+
+### Topic 2 — Human Resource Management
+- **Training:** invests in staff training → *because* workers gain new skills → *leads to* higher productivity and better quality → *therefore* lower unit costs and more satisfied customers — **but** trained staff may leave for rivals.
+- **Motivation (Herzberg):** enriches jobs with more responsibility → *because* motivators increase job satisfaction → *leads to* greater effort and lower absenteeism → *therefore* higher output and quality.
+- **High labour turnover:** staff keep leaving → *because* the firm must constantly recruit/train replacements → *leads to* higher costs and lost experience → *therefore* falling productivity and morale.
+- **Autocratic style with skilled staff:** manager makes all decisions → *because* skilled workers feel undervalued/ignored → *leads to* demotivation and higher turnover → *therefore* lost talent and lower productivity.
+
+### Topic 3 — Marketing
+- **Market research:** conducts primary research → *because* the firm better understands customer needs → *leads to* a marketing mix that matches the market → *therefore* higher sales and less risk of product failure — **but** research costs time and money.
+- **Penetration pricing:** launches at a low price → *because* it attracts price-sensitive customers quickly → *leads to* rapid gain in market share → *therefore* economies of scale and brand awareness — **but** low margins and a "cheap" image.
+- **Effective promotion:** runs a social media campaign → *because* it raises brand awareness cheaply and widely → *leads to* more customers trying the product → *therefore* higher sales revenue.
+- **USP / differentiation:** develops a unique feature → *because* the product stands out from rivals → *leads to* less price competition and customer loyalty → *therefore* the firm can charge a premium price.
+
+### Topic 4 — Operations
+- **Improved productivity:** invests in new technology → *because* more output is produced per worker/hour → *leads to* lower average (unit) costs → *therefore* higher profit margin or ability to cut prices to compete.
+- **JIT inventory:** switches to just-in-time → *because* little/no stock is held → *leads to* lower storage costs and freed-up cash → *therefore* improved cash flow — **but** any supply delay halts production.
+- **Higher capacity utilisation:** raises output towards full capacity → *because* fixed costs are spread over more units → *leads to* lower fixed cost per unit → *therefore* higher profit per unit — **but** at 100% there is no room for maintenance or extra orders.
+- **Poor quality:** quality falls → *because* more faulty products reach customers → *leads to* returns, complaints and reputation damage → *therefore* lost sales and higher costs.
+
+### Topic 5 — Finance
+- **Taking a bank loan:** borrows to expand → *because* interest must be paid regardless of performance → *leads to* higher fixed costs → *therefore* greater risk if sales fall (higher break-even) — **but** control is kept (no shares issued).
+- **Rising fixed costs:** fixed costs increase → *because* more contribution is needed to cover them → *leads to* a higher break-even output → *therefore* a smaller margin of safety and more risk of loss.
+- **Improving contribution per unit:** raises price or cuts variable cost → *because* each unit contributes more to fixed costs → *leads to* a lower break-even point → *therefore* profit is reached at a lower level of sales.
+- **Issuing shares (Plc):** sells new shares → *because* it raises large amounts without repayment → *leads to* finance for major expansion → *therefore* faster growth — **but** ownership is diluted and control may be lost.
+
+> **How to use in the exam:** pick the chain that fits the case, replace the generic words with the actual business/product, and add a short **evaluation** ("this depends on…", short vs long term) to reach the top level.
 
 ---
 
