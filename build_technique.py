@@ -120,12 +120,16 @@ h2('6. The 3-mark answer - Q1(b)/2(b)/3(b) (AO1 = 1, AO2 = 2)')
 p('Marks: 1 for knowledge of ONE relevant point, 2 for DEVELOPED application '
   'of that point to the business context. There is NO analysis mark - do not '
   'write a chain of consequences.')
-h3('Structure')
-bu('"[Point/term] means [brief knowledge] [K]. For [business + specific case '
-   'detail], this [how the point applies here] [App], [a second sentence of '
-   'developed application tied to the case] [App]."')
-bu('To score 2 (developed) not 1 (limited) for AO2: use real detail from the '
-   'case and show how the point fits THIS firm, not businesses in general.')
+h3('Structures (the 1 knowledge mark changes with the wording)')
+bu('Wording A - "Explain one benefit/reason/way...": K = STATE one relevant '
+   'point (the benefit/reason itself) [K]. Then develop it into the business '
+   '[App][App].')
+bu('Wording B - "Explain one benefit of [named term]" or "...the importance '
+   'of [term]": K = DEFINE the term [K]. Then apply that term to the business '
+   '[App][App].')
+bu('Either way AO2 is worth 2: to score 2 (developed) not 1 (limited), use '
+   'real case detail and show how it fits THIS firm, not businesses in '
+   'general. Do NOT add an analysis chain.')
 h3('Key words to write')
 bu('"In the case of [business]...", "because [business] [case detail]...", '
    '"for a firm that [case detail]...", "this fits [business] as...".')
@@ -155,10 +159,21 @@ p('(c) "TF manufactures toys and sells to large retailers. Explain one reason '
 h2('7. The 5-mark answer - Q1(c)/2(c)/3(c) (AO1 = 1, AO2 = 2, AO3 = 2)')
 p('Marks: 1 knowledge + 2 developed application + 2 developed analysis, all '
   'for ONE point. Analyse a single point in depth - do not list several.')
-h3('Structure')
-bu('"One [benefit/reason/way] is [point], which means [define] [K]. For '
-   '[business + case detail] this [apply] [App][App]. This means [effect 1] '
-   '[An], which leads to [final effect on profit/cost/competitiveness] [An]."')
+h3('Structures (the 1 knowledge mark can be a POINT or a DEFINITION)')
+bu('Wording A - "Explain/Analyse one benefit/drawback/reason/way...": K = '
+   'STATE the one point, e.g. name the benefit [K]. App = apply to the '
+   'business [App][App]. An = chain to a final effect [An][An].')
+bu('Wording B - "Explain the importance of [term]" / "Explain why a manager '
+   'needs to understand [term]" / "Explain why [term] matters": K = DEFINE '
+   'the term - here the knowledge mark IS the definition, not a benefit [K]. '
+   'App = apply the term to the business [App][App]. An = chain showing why '
+   'it matters -> effect [An][An].')
+bu('Wording C - "Explain how a business might [do X]": K = STATE one method '
+   '[K]. App = apply the method to the business [App][App]. An = chain to the '
+   'outcome [An][An].')
+bu('Universal template: [knowledge - a point OR a definition] [K]. For '
+   '[business + detail] this [apply] [App][App]. This means [effect] [An], '
+   'which leads to [final effect on profit/cost/competitiveness] [An].')
 h3('Key words to write')
 bu('"One [reason] is...", "which means...", "In the case of [business]...", '
    '"this means that...", "which leads to...", "as a result...".')
@@ -223,10 +238,20 @@ p('Marks: 2 knowledge + 2 application + 4 analysis. Write TWO developed, '
   'applied points, each pushed to a final effect. NO intro, NO conclusion, NO '
   'judgement. The big score here is ANALYSIS (4 marks), so develop each chain '
   'fully.')
-h3('Structure (write this twice - one per point)')
-bu('"One [way/benefit/drawback] is [point] [K]. For [business + case detail] '
-   'this [apply] [App]. As a result [effect 1] [An], which in turn [effect 2] '
-   '[An], meaning [final effect on profit/cost/competitiveness] [An]."')
+h3('Structures (all use TWO points; the wording sets what the points are)')
+bu('Wording A - "Analyse two benefits/drawbacks/ways/reasons...": the two '
+   'points ARE the two benefits/ways. Each point: K = state it [K], App = '
+   'apply [App], An = develop chain [An][An].')
+bu('Wording B - "Analyse the impact of [X] on a business": briefly define X '
+   '[K], then give TWO impacts as your two points, each applied [App] and '
+   'analysed [An][An].')
+bu('Wording C - "Analyse the factors [a business] should consider before '
+   '[decision]": pick TWO factors as your points; state each [K], apply '
+   '[App], analyse [An][An].')
+bu('Per point template: "One [point] is... [K]. For [business + detail] this '
+   '[apply] [App]. As a result [effect 1] [An], which in turn [effect 2] '
+   '[An], meaning [final effect] [An]." Analysis is 4 of 8 marks - develop '
+   'both chains. NO judgement.')
 h3('Key words to write (analysis connectives)')
 bu('"this means...", "because...", "which leads to...", "as a result...", '
    '"this in turn...", "therefore...", "ultimately...".')
@@ -281,14 +306,23 @@ p('Marks: 2 knowledge + 2 application + 2 analysis + 6 EVALUATION. Evaluation '
   'is HALF the marks, so it is where you win or lose the grade. You only need '
   'enough K/App/An to set up the arguments (about 6 marks); then spend the '
   'most time on a developed, balanced judgement IN CONTEXT (6 marks).')
-h3('Structure')
-bu('(Optional) one line defining the key term [K].')
-bu('Argument 1 (FOR) - applied point with a short chain [K/App/An].')
-bu('Argument 2 (AGAINST / alternative) - applied point with a short chain '
-   '[K/App/An].')
-bu('JUDGEMENT [Ev] (the 6 marks): a clear decision; WHY one side outweighs '
-   'the other; an "it depends on..." named factor; a short-term vs long-term '
-   'point; all tied to the SPECIFIC business.')
+h3('Structures (the wording sets the two sides; AO4 judgement is always 6)')
+bu('Common spine: (optional define key term [K]) -> Side 1 applied point + '
+   'short chain [K/App/An] -> Side 2 applied point + short chain [K/App/An] '
+   '-> JUDGEMENT [Ev].')
+bu('Wording A - "Evaluate whether [business] should do X": Side 1 = arguments '
+   'FOR doing X; Side 2 = arguments AGAINST. Judge whether it should.')
+bu('Wording B - "[Statement]. To what extent do you agree? / Evaluate this '
+   'view": Side 1 = arguments SUPPORTING the statement; Side 2 = arguments '
+   'CHALLENGING it. Judge HOW FAR you agree.')
+bu('Wording C - "Recommend whether [business] should choose X or Y": Side 1 = '
+   'the case for X; Side 2 = the case for Y. End with a clear RECOMMENDATION.')
+bu('Wording D - "Discuss the factors [business] should consider when '
+   '[decision]": give two or more factors (each applied + analysed), then '
+   'judge WHICH factor matters most for this business.')
+bu('JUDGEMENT [Ev] (always the 6 marks): a clear decision; WHY one side wins; '
+   'an "it depends on..." named factor; a short-term vs long-term point; all '
+   'tied to the SPECIFIC business.')
 p('Level ladder for AO4: limited judgement (1-2) -> developed judgement that '
   'balances arguments (3-4) -> developed judgement that balances arguments IN '
   'CONTEXT of the business (5-6). Naming the business in your judgement is '
