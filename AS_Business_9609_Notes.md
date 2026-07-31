@@ -153,6 +153,16 @@
 **Limited liability** = owners' losses are limited to the amount they invested; personal assets are protected. Applies to shareholders of Ltd and Plc. (Requires the business to be an **incorporated** = separate legal identity.)
 - **Incorporation (2-mark definition):** the process of forming a company that has a separate legal identity from its owners, allowing it to own assets, owe debts and be sued in its own name.
 
+**2-mark definitions of each business structure:**
+> **Sole trader (2-mark definition):** a business owned and controlled by one person, who has unlimited liability and keeps all the profit.
+> **Partnership (2-mark definition):** a business owned by two or more people who share the capital, responsibilities and profits, usually with unlimited liability.
+> **Private limited company / Ltd (2-mark definition):** an incorporated business whose shares are sold privately (not on the stock exchange) to a limited number of people, and whose owners have limited liability.
+> **Public limited company / Plc (2-mark definition):** an incorporated business that can sell its shares to the general public on a stock exchange, and whose shareholders have limited liability.
+> **Franchise (2-mark definition):** a business arrangement where one party (the franchisee) buys the right to trade under the name and business format of an established business (the franchisor) in return for fees.
+> **Co-operative (2-mark definition):** a business owned and democratically run by its members, who share the profits and each have an equal vote (one member, one vote).
+> **Joint venture (2-mark definition):** an arrangement where two or more businesses agree to set up and share ownership of a new, separate business, sharing its costs, risks and profits.
+> **Social enterprise (2-mark definition):** a business that trades with the main aim of achieving social or environmental objectives, reinvesting most of its profits to further those aims.
+
 | Type | Key features | Advantages | Disadvantages |
 |---|---|---|---|
 | **Sole trader** | One owner, unincorporated | Easy/cheap to set up, full control, keeps all profit, privacy | Unlimited liability, hard to raise finance, long hours, no continuity |
