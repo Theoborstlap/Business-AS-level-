@@ -60,6 +60,10 @@
 | **International** | Sells/trades in more than one country (exports) |
 | **Multinational (MNC)** | Has production/operations bases in more than one country |
 
+**Multinationals (MNCs) — advantages & disadvantages:**
+- **Advantages:** access to larger/global markets, economies of scale, lower costs (cheaper labour/materials abroad), spreads risk across countries, avoids trade barriers.
+- **Disadvantages:** hard to manage/coordinate across countries, cultural and language differences, exchange-rate risk, exposure to different laws/politics, risk to reputation if seen to exploit host nations.
+
 ### 1.1.2 The role of entrepreneurs and intrapreneurs
 
 > **Entrepreneur (2-mark definition):** a person who takes the financial risk of setting up and running a business, organising and combining the factors of production to produce goods or services.
@@ -149,6 +153,16 @@
 **Limited liability** = owners' losses are limited to the amount they invested; personal assets are protected. Applies to shareholders of Ltd and Plc. (Requires the business to be an **incorporated** = separate legal identity.)
 - **Incorporation (2-mark definition):** the process of forming a company that has a separate legal identity from its owners, allowing it to own assets, owe debts and be sued in its own name.
 
+**2-mark definitions of each business structure:**
+> **Sole trader (2-mark definition):** a business owned and controlled by one person, who has unlimited liability and keeps all the profit.
+> **Partnership (2-mark definition):** a business owned by two or more people who share the capital, responsibilities and profits, usually with unlimited liability.
+> **Private limited company / Ltd (2-mark definition):** an incorporated business whose shares are sold privately (not on the stock exchange) to a limited number of people, and whose owners have limited liability.
+> **Public limited company / Plc (2-mark definition):** an incorporated business that can sell its shares to the general public on a stock exchange, and whose shareholders have limited liability.
+> **Franchise (2-mark definition):** a business arrangement where one party (the franchisee) buys the right to trade under the name and business format of an established business (the franchisor) in return for fees.
+> **Co-operative (2-mark definition):** a business owned and democratically run by its members, who share the profits and each have an equal vote (one member, one vote).
+> **Joint venture (2-mark definition):** an arrangement where two or more businesses agree to set up and share ownership of a new, separate business, sharing its costs, risks and profits.
+> **Social enterprise (2-mark definition):** a business that trades with the main aim of achieving social or environmental objectives, reinvesting most of its profits to further those aims.
+
 | Type | Key features | Advantages | Disadvantages |
 |---|---|---|---|
 | **Sole trader** | One owner, unincorporated | Easy/cheap to set up, full control, keeps all profit, privacy | Unlimited liability, hard to raise finance, long hours, no continuity |
@@ -160,11 +174,38 @@
 | **Joint venture** | Two businesses form a separate business together | Shared costs/risk/expertise, access to new markets | Profits shared, culture clashes, disputes over management |
 | **Social enterprise** | Trades to achieve social/environmental aims, profits reinvested | Meets social goals, may get support/grants, positive image | Harder to raise finance, may conflict profit vs social aims |
 
+**Franchise — advantages & disadvantages (a common exam focus):**
+- **Advantages (to franchisee):** lower risk (proven business model), established brand and customer base, training/support and marketing provided, easier to raise finance.
+- **Disadvantages (to franchisee):** must pay initial fee + ongoing royalties, little independence/control, strict rules set by franchisor, reputation depends on other franchisees.
+
 **Appropriateness:** small/new low-risk business → sole trader; family/professional business needing more capital → partnership or Ltd; large business needing major capital → Plc; proven-model low-experience owner → franchise.
 
 **Changing ownership type (e.g. Ltd → Plc):**
 - **Advantages:** raises far more capital, limited liability retained, greater status, growth possible.
 - **Disadvantages:** loss of control, risk of takeover, must disclose accounts, divorce of ownership and control, short-termism pressure.
+
+**Common ownership-change chains (write these as analysis chains in the exam):**
+
+- **Sole trader → Partnership**
+  - Takes on partners → *because* more owners inject capital and share skills → *leads to* more finance and a wider range of expertise → *therefore* the business can expand and cover more work — **but** profit and decision-making must now be shared, which can cause disputes.
+
+- **Partnership → Private limited company (Ltd)**
+  - Becomes incorporated → *because* the owners gain **limited liability** and can sell shares privately → *leads to* personal assets being protected and easier access to capital → *therefore* owners can take bigger risks and grow — **but** accounts must be published and there is more legal/admin cost.
+
+- **Ltd → Public limited company (Plc) [floating / IPO]**
+  - Floats on the stock exchange → *because* shares can now be sold to the public → *leads to* a large injection of share capital → *therefore* the firm can fund major expansion/investment → **however** ownership is diluted → *leads to* possible loss of control and risk of a hostile takeover → *therefore* the original owners may lose their business or be pressured into short-term profit decisions.
+
+- **Plc → private (management/private buy-out)**
+  - Taken back into private ownership → *because* owners want to escape stock-market pressure and disclosure rules → *leads to* freedom to focus on the long term without public scrutiny → *therefore* decisions can be made faster and more privately — **but** access to large-scale share capital is lost.
+
+- **Family business → bringing in external managers / becoming a company**
+  - Recruits professional managers → *because* the firm has outgrown family expertise → *leads to* better-quality management and new ideas → *therefore* performance and growth may improve — **but** family control weakens and culture/values may change.
+
+- **Public sector → private sector (privatisation)**
+  - State-owned firm is sold to private owners → *because* private ownership brings a profit motive and competition → *leads to* pressure to cut costs and improve efficiency → *therefore* prices/service may improve — **however** the profit focus → *leads to* possible cuts to unprofitable but socially important services.
+
+- **Independent business → Franchise (franchisor grants franchises)**
+  - Expands by franchising → *because* franchisees provide the capital and run each outlet → *leads to* rapid, low-cost growth for the franchisor → *therefore* the brand spreads quickly — **but** control over quality/consistency across outlets is reduced.
 
 ---
 
@@ -246,6 +287,8 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 
 **Hierarchy — mission → aims → objectives → strategy → tactics:**
 - **Mission statement:** the overall purpose/reason the business exists (qualitative).
+  - **Advantages of a mission statement:** gives the business a clear sense of direction, motivates and unites staff behind a shared purpose, improves image with customers/investors.
+  - **Disadvantages:** often too vague/general to guide day-to-day decisions, can be ignored by staff, may be seen as a public-relations exercise rather than genuine.
 - **Aims:** broad long-term goals.
 - **Objectives:** specific, measurable goals derived from aims.
 - **Strategy:** long-term plan to achieve objectives.
@@ -257,6 +300,8 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 - **Translated into targets and budgets** for each department/team.
 - **Communication of objectives** is essential so staff understand goals; can improve motivation (clarity, purpose) or reduce it if unrealistic/imposed.
 - **SMART objectives:** **S**pecific, **M**easurable, **A**chievable, **R**ealistic, **T**ime-limited — makes objectives useful and reviewable.
+  - **Advantages of SMART objectives:** clear and easy to understand, progress can be measured/reviewed, motivates staff with realistic targets, aids decision-making.
+  - **Disadvantages:** time-consuming to set, can become outdated if the environment changes quickly, rigid targets may discourage flexibility or over-ambitious goals.
 - **Ethics & objectives:** ethical decisions (fair pay, no child labour, honest marketing) may raise costs/reduce short-term profit but improve reputation, loyalty and long-term success. There can be a **profit vs ethics trade-off**.
 
 ## 1.5 Stakeholders
@@ -418,6 +463,8 @@ Motivated workers are more productive, produce higher quality, have lower absent
 
 **Non-financial motivators:** training, opportunities for promotion, development, status, **job re-design**, team working, **empowerment** (giving control), participation, **job enrichment** (adding challenging/meaningful tasks), job enlargement, job rotation.
 > **Empowerment (2-mark definition):** giving employees the authority and responsibility to make their own decisions about how to do their work.
+- **Advantages of empowerment:** boosts motivation and job satisfaction, uses staff skills/ideas, faster decisions, frees managers for other work.
+- **Disadvantages:** staff may lack skills/confidence, risk of poor decisions/mistakes, some employees dislike extra responsibility, managers may resist losing control.
 > **Job enrichment (2-mark definition):** increasing the depth of a job by adding more challenging and meaningful tasks and greater responsibility to motivate the worker.
 - **Benefits of non-financial motivators:** longer-lasting motivation, low/no direct cost, improve loyalty and job satisfaction, develop skills.
 - **Limitations:** slower to take effect, may not suit staff who mainly want money, empowerment/enrichment can add pressure if unsupported.
@@ -593,8 +640,12 @@ Aim: inform, persuade, remind → increase sales/awareness.
 - **Sales promotion:** short-term incentives (discounts, BOGOF, coupons, loyalty points) — boosts short-term sales.
 - **Direct promotion:** direct mail, email, telemarketing to targeted customers.
 - **Digital promotion (developments):** social media, influencer marketing, SEO, pay-per-click, viral/content marketing — cheap, wide reach, targeted, measurable.
+  - **Advantages:** low cost, huge/global reach, easily targeted, interactive, results are measurable, quick to update.
+  - **Disadvantages:** easily ignored, negative comments spread fast (reputation risk), needs constant updating/skills, older customers may be missed.
 - **Packaging in promotion:** protects, informs, attracts attention, reinforces brand.
 - **Branding in promotion:** creates recognition, loyalty, allows premium pricing, differentiates.
+  - **Advantages of branding:** customer recognition and loyalty, allows premium (higher) prices, differentiates from rivals, easier to launch new products under the brand.
+  - **Disadvantages:** expensive and slow to build, damage to one product can harm the whole brand, must be maintained consistently, no guarantee of success.
 - **Above-the-line** = paid mass media (advertising). **Below-the-line** = other methods the business controls (sales promotion, direct, PR).
 
 ### 3.3.6 Place (channels of distribution)
@@ -602,6 +653,8 @@ Getting the product to the customer in the right place at the right time.
 - **Channels:** Producer → Consumer (direct); Producer → Retailer → Consumer; Producer → Wholesaler → Retailer → Consumer.
 - **Physical distribution:** shops, stores, physical delivery.
 - **Digital distribution:** online sales, downloads, e-commerce, apps — wider reach, lower cost, 24/7.
+  - **Advantages:** wider (global) reach, lower overheads (no physical shops), open 24/7, easy to collect customer data.
+  - **Disadvantages:** delivery/logistics costs, no physical inspection of goods, high competition online, needs reliable technology/website, security risks.
 - Choice depends on product type, market, cost, control needed.
 
 
@@ -753,6 +806,17 @@ Using an outside firm to carry out tasks previously done in-house.
 **External (from outside):**
 - **Share capital** (sell shares) · **Debentures** (long-term loans/bonds) · **New partners** · **Venture capital** (investment for high-risk firms) · **Bank overdraft** · **Leasing** · **Hire purchase** · **Bank loans** · **Mortgages** · **Debt factoring** (sell receivables to a factor for immediate cash) · **Trade credit** · **Micro-finance** (small loans, developing economies) · **Crowdfunding** · **Government grants**.
 
+**Advantages & disadvantages of the main sources of finance:**
+| Source | Advantages | Disadvantages |
+|---|---|---|
+| **Retained profit** | No interest, no loss of control, readily available | Only if profitable; reduces funds for dividends; may be too little |
+| **Share capital (Plc)** | Raises large sums, no repayment/interest | Dilutes control, must share profit (dividends), risk of takeover |
+| **Bank loan** | Set repayment schedule, keeps control, large sums | Interest cost, needs collateral, must repay even if profits fall |
+| **Bank overdraft** | Flexible, quick, only pay interest on amount used | High interest, can be recalled by bank, only short-term |
+| **Leasing** | No large upfront cost, maintenance often included | More expensive long-term, asset never owned |
+| **Trade credit** | Interest-free short-term finance, improves cash flow | Suppliers may refuse/limit it, loss of early-payment discounts |
+| **Crowdfunding** | Access to many investors, tests market interest | Idea can be copied, may not reach target, fees |
+
 ### 5.2.3 Factors affecting choice of source
 - **Cost** (interest, fees) · **Flexibility** · **Need to retain control** (issuing shares dilutes control) · **Use/purpose** (short-term need → short-term source; long-term asset → long-term source) · **Level of existing debt (gearing)** · legal form of business · amount needed.
 
@@ -877,6 +941,43 @@ Accurate costs are needed for pricing, monitoring performance, and decision-maki
 | Break-even output | Fixed costs ÷ contribution per unit |
 | Margin of safety | Actual output − break-even output |
 | Variance | Actual figure − budgeted figure |
+
+---
+
+# COMMON ANALYSIS CHAINS (chain reactions for AO3 marks)
+
+Use these ready-made *point → because → leads to → therefore* chains in "Analyse", "Explain" and evaluation answers. Always **apply** them to the business in the case study.
+
+### Topic 1 — Business & Environment
+- **Adding value:** improves design/branding → *because* customers see the product as worth more → *leads to* ability to charge a higher price/margin → *therefore* higher profit and stronger competitiveness.
+- **Poor cash flow:** customers pay late → *because* cash coming in is delayed → *leads to* not enough cash to pay wages/suppliers → *therefore* the business may become insolvent even if profitable.
+- **Meeting stakeholder needs (workers):** raises wages → *because* staff feel valued and motivated → *leads to* higher productivity and lower labour turnover → *therefore* lower recruitment costs and better output — **but** higher wage costs reduce short-term profit.
+
+### Topic 2 — Human Resource Management
+- **Training:** invests in staff training → *because* workers gain new skills → *leads to* higher productivity and better quality → *therefore* lower unit costs and more satisfied customers — **but** trained staff may leave for rivals.
+- **Motivation (Herzberg):** enriches jobs with more responsibility → *because* motivators increase job satisfaction → *leads to* greater effort and lower absenteeism → *therefore* higher output and quality.
+- **High labour turnover:** staff keep leaving → *because* the firm must constantly recruit/train replacements → *leads to* higher costs and lost experience → *therefore* falling productivity and morale.
+- **Autocratic style with skilled staff:** manager makes all decisions → *because* skilled workers feel undervalued/ignored → *leads to* demotivation and higher turnover → *therefore* lost talent and lower productivity.
+
+### Topic 3 — Marketing
+- **Market research:** conducts primary research → *because* the firm better understands customer needs → *leads to* a marketing mix that matches the market → *therefore* higher sales and less risk of product failure — **but** research costs time and money.
+- **Penetration pricing:** launches at a low price → *because* it attracts price-sensitive customers quickly → *leads to* rapid gain in market share → *therefore* economies of scale and brand awareness — **but** low margins and a "cheap" image.
+- **Effective promotion:** runs a social media campaign → *because* it raises brand awareness cheaply and widely → *leads to* more customers trying the product → *therefore* higher sales revenue.
+- **USP / differentiation:** develops a unique feature → *because* the product stands out from rivals → *leads to* less price competition and customer loyalty → *therefore* the firm can charge a premium price.
+
+### Topic 4 — Operations
+- **Improved productivity:** invests in new technology → *because* more output is produced per worker/hour → *leads to* lower average (unit) costs → *therefore* higher profit margin or ability to cut prices to compete.
+- **JIT inventory:** switches to just-in-time → *because* little/no stock is held → *leads to* lower storage costs and freed-up cash → *therefore* improved cash flow — **but** any supply delay halts production.
+- **Higher capacity utilisation:** raises output towards full capacity → *because* fixed costs are spread over more units → *leads to* lower fixed cost per unit → *therefore* higher profit per unit — **but** at 100% there is no room for maintenance or extra orders.
+- **Poor quality:** quality falls → *because* more faulty products reach customers → *leads to* returns, complaints and reputation damage → *therefore* lost sales and higher costs.
+
+### Topic 5 — Finance
+- **Taking a bank loan:** borrows to expand → *because* interest must be paid regardless of performance → *leads to* higher fixed costs → *therefore* greater risk if sales fall (higher break-even) — **but** control is kept (no shares issued).
+- **Rising fixed costs:** fixed costs increase → *because* more contribution is needed to cover them → *leads to* a higher break-even output → *therefore* a smaller margin of safety and more risk of loss.
+- **Improving contribution per unit:** raises price or cuts variable cost → *because* each unit contributes more to fixed costs → *leads to* a lower break-even point → *therefore* profit is reached at a lower level of sales.
+- **Issuing shares (Plc):** sells new shares → *because* it raises large amounts without repayment → *leads to* finance for major expansion → *therefore* faster growth — **but** ownership is diluted and control may be lost.
+
+> **How to use in the exam:** pick the chain that fits the case, replace the generic words with the actual business/product, and add a short **evaluation** ("this depends on…", short vs long term) to reach the top level.
 
 ---
 
