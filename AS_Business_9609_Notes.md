@@ -60,6 +60,10 @@
 | **International** | Sells/trades in more than one country (exports) |
 | **Multinational (MNC)** | Has production/operations bases in more than one country |
 
+**Multinationals (MNCs) — advantages & disadvantages:**
+- **Advantages:** access to larger/global markets, economies of scale, lower costs (cheaper labour/materials abroad), spreads risk across countries, avoids trade barriers.
+- **Disadvantages:** hard to manage/coordinate across countries, cultural and language differences, exchange-rate risk, exposure to different laws/politics, risk to reputation if seen to exploit host nations.
+
 ### 1.1.2 The role of entrepreneurs and intrapreneurs
 
 > **Entrepreneur (2-mark definition):** a person who takes the financial risk of setting up and running a business, organising and combining the factors of production to produce goods or services.
@@ -160,6 +164,10 @@
 | **Joint venture** | Two businesses form a separate business together | Shared costs/risk/expertise, access to new markets | Profits shared, culture clashes, disputes over management |
 | **Social enterprise** | Trades to achieve social/environmental aims, profits reinvested | Meets social goals, may get support/grants, positive image | Harder to raise finance, may conflict profit vs social aims |
 
+**Franchise — advantages & disadvantages (a common exam focus):**
+- **Advantages (to franchisee):** lower risk (proven business model), established brand and customer base, training/support and marketing provided, easier to raise finance.
+- **Disadvantages (to franchisee):** must pay initial fee + ongoing royalties, little independence/control, strict rules set by franchisor, reputation depends on other franchisees.
+
 **Appropriateness:** small/new low-risk business → sole trader; family/professional business needing more capital → partnership or Ltd; large business needing major capital → Plc; proven-model low-experience owner → franchise.
 
 **Changing ownership type (e.g. Ltd → Plc):**
@@ -246,6 +254,8 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 
 **Hierarchy — mission → aims → objectives → strategy → tactics:**
 - **Mission statement:** the overall purpose/reason the business exists (qualitative).
+  - **Advantages of a mission statement:** gives the business a clear sense of direction, motivates and unites staff behind a shared purpose, improves image with customers/investors.
+  - **Disadvantages:** often too vague/general to guide day-to-day decisions, can be ignored by staff, may be seen as a public-relations exercise rather than genuine.
 - **Aims:** broad long-term goals.
 - **Objectives:** specific, measurable goals derived from aims.
 - **Strategy:** long-term plan to achieve objectives.
@@ -257,6 +267,8 @@ Methods: **number of employees, revenue (sales turnover), capital employed, mark
 - **Translated into targets and budgets** for each department/team.
 - **Communication of objectives** is essential so staff understand goals; can improve motivation (clarity, purpose) or reduce it if unrealistic/imposed.
 - **SMART objectives:** **S**pecific, **M**easurable, **A**chievable, **R**ealistic, **T**ime-limited — makes objectives useful and reviewable.
+  - **Advantages of SMART objectives:** clear and easy to understand, progress can be measured/reviewed, motivates staff with realistic targets, aids decision-making.
+  - **Disadvantages:** time-consuming to set, can become outdated if the environment changes quickly, rigid targets may discourage flexibility or over-ambitious goals.
 - **Ethics & objectives:** ethical decisions (fair pay, no child labour, honest marketing) may raise costs/reduce short-term profit but improve reputation, loyalty and long-term success. There can be a **profit vs ethics trade-off**.
 
 ## 1.5 Stakeholders
@@ -418,6 +430,8 @@ Motivated workers are more productive, produce higher quality, have lower absent
 
 **Non-financial motivators:** training, opportunities for promotion, development, status, **job re-design**, team working, **empowerment** (giving control), participation, **job enrichment** (adding challenging/meaningful tasks), job enlargement, job rotation.
 > **Empowerment (2-mark definition):** giving employees the authority and responsibility to make their own decisions about how to do their work.
+- **Advantages of empowerment:** boosts motivation and job satisfaction, uses staff skills/ideas, faster decisions, frees managers for other work.
+- **Disadvantages:** staff may lack skills/confidence, risk of poor decisions/mistakes, some employees dislike extra responsibility, managers may resist losing control.
 > **Job enrichment (2-mark definition):** increasing the depth of a job by adding more challenging and meaningful tasks and greater responsibility to motivate the worker.
 - **Benefits of non-financial motivators:** longer-lasting motivation, low/no direct cost, improve loyalty and job satisfaction, develop skills.
 - **Limitations:** slower to take effect, may not suit staff who mainly want money, empowerment/enrichment can add pressure if unsupported.
@@ -593,8 +607,12 @@ Aim: inform, persuade, remind → increase sales/awareness.
 - **Sales promotion:** short-term incentives (discounts, BOGOF, coupons, loyalty points) — boosts short-term sales.
 - **Direct promotion:** direct mail, email, telemarketing to targeted customers.
 - **Digital promotion (developments):** social media, influencer marketing, SEO, pay-per-click, viral/content marketing — cheap, wide reach, targeted, measurable.
+  - **Advantages:** low cost, huge/global reach, easily targeted, interactive, results are measurable, quick to update.
+  - **Disadvantages:** easily ignored, negative comments spread fast (reputation risk), needs constant updating/skills, older customers may be missed.
 - **Packaging in promotion:** protects, informs, attracts attention, reinforces brand.
 - **Branding in promotion:** creates recognition, loyalty, allows premium pricing, differentiates.
+  - **Advantages of branding:** customer recognition and loyalty, allows premium (higher) prices, differentiates from rivals, easier to launch new products under the brand.
+  - **Disadvantages:** expensive and slow to build, damage to one product can harm the whole brand, must be maintained consistently, no guarantee of success.
 - **Above-the-line** = paid mass media (advertising). **Below-the-line** = other methods the business controls (sales promotion, direct, PR).
 
 ### 3.3.6 Place (channels of distribution)
@@ -602,6 +620,8 @@ Getting the product to the customer in the right place at the right time.
 - **Channels:** Producer → Consumer (direct); Producer → Retailer → Consumer; Producer → Wholesaler → Retailer → Consumer.
 - **Physical distribution:** shops, stores, physical delivery.
 - **Digital distribution:** online sales, downloads, e-commerce, apps — wider reach, lower cost, 24/7.
+  - **Advantages:** wider (global) reach, lower overheads (no physical shops), open 24/7, easy to collect customer data.
+  - **Disadvantages:** delivery/logistics costs, no physical inspection of goods, high competition online, needs reliable technology/website, security risks.
 - Choice depends on product type, market, cost, control needed.
 
 
@@ -752,6 +772,17 @@ Using an outside firm to carry out tasks previously done in-house.
 
 **External (from outside):**
 - **Share capital** (sell shares) · **Debentures** (long-term loans/bonds) · **New partners** · **Venture capital** (investment for high-risk firms) · **Bank overdraft** · **Leasing** · **Hire purchase** · **Bank loans** · **Mortgages** · **Debt factoring** (sell receivables to a factor for immediate cash) · **Trade credit** · **Micro-finance** (small loans, developing economies) · **Crowdfunding** · **Government grants**.
+
+**Advantages & disadvantages of the main sources of finance:**
+| Source | Advantages | Disadvantages |
+|---|---|---|
+| **Retained profit** | No interest, no loss of control, readily available | Only if profitable; reduces funds for dividends; may be too little |
+| **Share capital (Plc)** | Raises large sums, no repayment/interest | Dilutes control, must share profit (dividends), risk of takeover |
+| **Bank loan** | Set repayment schedule, keeps control, large sums | Interest cost, needs collateral, must repay even if profits fall |
+| **Bank overdraft** | Flexible, quick, only pay interest on amount used | High interest, can be recalled by bank, only short-term |
+| **Leasing** | No large upfront cost, maintenance often included | More expensive long-term, asset never owned |
+| **Trade credit** | Interest-free short-term finance, improves cash flow | Suppliers may refuse/limit it, loss of early-payment discounts |
+| **Crowdfunding** | Access to many investors, tests market interest | Idea can be copied, may not reach target, fees |
 
 ### 5.2.3 Factors affecting choice of source
 - **Cost** (interest, fees) · **Flexibility** · **Need to retain control** (issuing shares dilutes control) · **Use/purpose** (short-term need → short-term source; long-term asset → long-term source) · **Level of existing debt (gearing)** · legal form of business · amount needed.
